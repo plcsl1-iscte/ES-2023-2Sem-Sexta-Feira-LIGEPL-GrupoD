@@ -20,12 +20,12 @@ public class ManageTimetable {
         Path filePath = Paths.get("src/main/java/iscte/timetable/files/horario-exemplo.csv");
         String inputFileCSV = filePath.toAbsolutePath().toString();
         String outputFileJSON = "src/main/java/iscte/timetable/files/horario-convertido.json";
-
         String jsonFilePath = "src/main/java/iscte/timetable/files/horario-convertido.json";
         File jsonFile = new File(jsonFilePath);
         ;
         try {
             convertCSVtoJSON(inputFileCSV, outputFileJSON);
+            saveTimetableJSON(jsonFile, "src/main/java/iscte/timetable/files/horario.json");
             convertJSONtoCSV(jsonFile, "teste");
         } catch (IOException | CsvException | ParseException | org.json.simple.parser.ParseException e) {
             e.printStackTrace();
@@ -55,6 +55,10 @@ public class ManageTimetable {
         try (Writer writer = Files.newBufferedWriter(Paths.get(outputFile))) {
             objectMapper.writeValue(writer, arrayNode);
         }
+    }
+
+    public static void saveTimetableJSON(File inputFile, String outputFile) throws IOException {
+        Files.copy(inputFile.toPath(), Paths.get(outputFile), StandardCopyOption.REPLACE_EXISTING);
     }
 
     public static void convertJSONtoCSV(File jsonFile, String csvFileName)
