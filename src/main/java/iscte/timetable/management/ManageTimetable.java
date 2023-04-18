@@ -1,11 +1,10 @@
 package iscte.timetable.management;
 
-<<<<<<< Updated upstream
-=======
+<<<<<<<Updated upstream=======
+
 import java.io.*;
 import java.nio.file.*;
-import java.util.*;
->>>>>>> Stashed changes
+import java.util.*;>>>>>>>Stashed changes
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.node.*;
 import com.opencsv.CSVReader;
@@ -20,7 +19,9 @@ import org.json.simple.parser.JSONParser;
 
 public class ManageTimetable {
 
-<<<<<<< Updated upstream
+  <<<<<<<
+  Updated upstream
+
   public static void main(String[] args) {
     String Repo = "src/main/java/iscte/timetable/files/";
     Path filePath = Paths.get(Repo + "horario-exemplo.csv");
@@ -33,11 +34,10 @@ public class ManageTimetable {
       saveTimetableJSON(jsonFile, Repo + "horario.json");
       convertJSONtoCSV(jsonFile, Repo + "horario-convertido");
     } catch (
-      IOException
-      | CsvException
-      | ParseException
-      | org.json.simple.parser.ParseException e
-    ) {
+        IOException
+        | CsvException
+        | ParseException
+        | org.json.simple.parser.ParseException e) {
       e.printStackTrace();
     }
   }
@@ -56,19 +56,20 @@ public class ManageTimetable {
     ArrayNode arrayNode = objectMapper.createArrayNode();
     String[] headers = lines.get(0);
 =======
-    public static void main(String[] args) {
-        Path filePath = Paths.get("src/main/java/iscte/timetable/files/horario-exemplo.csv");
 
-        String inputFileCSV = filePath.toAbsolutePath().toString();
-        String outputFileJSON = "src/main/java/iscte/timetable/files/horario-convertido.json";
-        try {
-            convertCSVtoJSON(inputFileCSV, outputFileJSON);
-        } catch (IOException | CsvException e) {
-            e.printStackTrace();
-        }
+  public static void main(String[] args) {
+    Path filePath = Paths.get("src/main/java/iscte/timetable/files/horario-exemplo.csv");
+
+    String inputFileCSV = filePath.toAbsolutePath().toString();
+    String outputFileJSON = "src/main/java/iscte/timetable/files/horario-convertido.json";
+    try {
+      convertCSVtoJSON(inputFileCSV, outputFileJSON);
+    } catch (IOException | CsvException e) {
+      e.printStackTrace();
     }
+  }
 
-    public static void convertCSVtoJSON(String inputFile, String outputFile) throws IOException, CsvException {
+  public static void convertCSVtoJSON(String inputFile, String outputFile) throws IOException, CsvException {
         List<String[]> lines;
         try (Reader reader = Files.newBufferedReader(Paths.get(inputFile));
              CSVReader csvReader = new CSVReader(reader)) {
@@ -92,12 +93,11 @@ public class ManageTimetable {
   }
 
   public static void saveTimetableJSON(File inputFile, String outputFile)
-    throws IOException {
+      throws IOException {
     Files.copy(
-      inputFile.toPath(),
-      Paths.get(outputFile),
-      StandardCopyOption.REPLACE_EXISTING
-    );
+        inputFile.toPath(),
+        Paths.get(outputFile),
+        StandardCopyOption.REPLACE_EXISTING);
   }
 
   public static void convertJSONtoCSV(File jsonFile, String csvFileName)
@@ -145,8 +145,8 @@ public class ManageTimetable {
     // Close the CSV writer and the JSON reader
     writer.close();
     reader.close();
-  }
+  }}=======}>>>>>>>
+
+  Stashed changes
+
 }
-=======
-}
->>>>>>> Stashed changes
