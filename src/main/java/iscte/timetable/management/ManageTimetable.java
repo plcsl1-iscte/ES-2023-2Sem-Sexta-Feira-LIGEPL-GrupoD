@@ -1,5 +1,11 @@
 package iscte.timetable.management;
 
+<<<<<<< Updated upstream
+=======
+import java.io.*;
+import java.nio.file.*;
+import java.util.*;
+>>>>>>> Stashed changes
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.node.*;
 import com.opencsv.CSVReader;
@@ -14,6 +20,7 @@ import org.json.simple.parser.JSONParser;
 
 public class ManageTimetable {
 
+<<<<<<< Updated upstream
   public static void main(String[] args) {
     String Repo = "src/main/java/iscte/timetable/files/";
     Path filePath = Paths.get(Repo + "horario-exemplo.csv");
@@ -48,6 +55,26 @@ public class ManageTimetable {
     ObjectMapper objectMapper = new ObjectMapper();
     ArrayNode arrayNode = objectMapper.createArrayNode();
     String[] headers = lines.get(0);
+=======
+    public static void main(String[] args) {
+        Path filePath = Paths.get("src/main/java/iscte/timetable/files/horario-exemplo.csv");
+
+        String inputFileCSV = filePath.toAbsolutePath().toString();
+        String outputFileJSON = "src/main/java/iscte/timetable/files/horario-convertido.json";
+        try {
+            convertCSVtoJSON(inputFileCSV, outputFileJSON);
+        } catch (IOException | CsvException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void convertCSVtoJSON(String inputFile, String outputFile) throws IOException, CsvException {
+        List<String[]> lines;
+        try (Reader reader = Files.newBufferedReader(Paths.get(inputFile));
+             CSVReader csvReader = new CSVReader(reader)) {
+            lines = csvReader.readAll();
+        }
+>>>>>>> Stashed changes
 
     for (int i = 1; i < lines.size(); i++) {
       ObjectNode objectNode = objectMapper.createObjectNode();
@@ -57,6 +84,7 @@ public class ManageTimetable {
       }
       arrayNode.add(objectNode);
     }
+<<<<<<< Updated upstream
 
     try (Writer writer = Files.newBufferedWriter(Paths.get(outputFile))) {
       objectMapper.writeValue(writer, arrayNode);
@@ -119,3 +147,6 @@ public class ManageTimetable {
     reader.close();
   }
 }
+=======
+}
+>>>>>>> Stashed changes
