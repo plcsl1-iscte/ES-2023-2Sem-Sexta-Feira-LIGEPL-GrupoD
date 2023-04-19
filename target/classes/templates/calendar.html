@@ -21,13 +21,16 @@
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
                 <div class="d-flex flex-column align-items-center m-3 mt-3">
                     <div class="mb-3 w-100">
-                        <form>
+                        <form id="handleFileUpload" method="post" enctype="multipart/form-data" th:action="@{/handleFileUpload}"
+                            th:object="${model}">
                             <div class="cursor-pointer">
                                 <label for="formFile"
                                     class="text-center btn btn-primary btn-block font-weight-normal">Importar
                                     Horário</label>
-                                <input class="form-control form-control-sm d-none" type="file" id="formFile">
+                                <input class="form-control form-control-sm" type="file" id="formFile" name="file">
                             </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div th:if="${message}" class="alert alert-success mt-3" th:text="${message}"></div>
                         </form>
                     </div>
                     <div class="mb-3 w-100">
