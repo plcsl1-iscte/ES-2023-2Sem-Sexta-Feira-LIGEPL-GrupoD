@@ -75,6 +75,27 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.15.0-rc1</version>
         </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.wnameless</groupId>
+            <artifactId>json-flattener</artifactId>
+            <version>0.5.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.9.0</version>
+          </dependency>
+      <dependency>
+        <groupId>io.7mind.izumi</groupId>
+        <artifactId>fundamentals-json-circe_sjs0.6_2.12</artifactId>
+        <version>0.10.2-M8</version>
+      </dependency>
     </dependencies>
 
     <build>

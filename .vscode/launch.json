@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConversorHorario",
+            "request": "launch",
+            "mainClass": "iscte.timetable.management.ConversorHorario",
+            "projectName": "iscte-timetable-management"
+        },
+        {
+            "type": "java",
+            "name": "CsvJsonConverter",
+            "request": "launch",
+            "mainClass": "iscte.timetable.management.CsvJsonConverter",
+            "projectName": "iscte-timetable-management"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
