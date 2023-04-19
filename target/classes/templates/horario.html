@@ -1,43 +1,42 @@
+@@ -0,0 +1,40 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Horário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
 </head>
+
 <body>
-    <h1>Horário</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Curso</th>
-                <th>Unidade Curricular</th>
-                <th>Turno</th>
-                <th>Turma</th>
-                <th>Inscritos no turno</th>
-                <th>Dia da semana</th>
-                <th>Hora início da aula</th>
-                <th>Hora fim da aula</th>
-                <th>Data da aula</th>
-                <th>Sala atribuída à aula</th>
-                <th>Lotação da sala</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="horario : ${horarios}">
-                <td th:text="${horario.curso}"></td>
-                <td th:text="${horario.unidadeCurricular}"></td>
-                <td th:text="${horario.turno}"></td>
-                <td th:text="${horario.turma}"></td>
-                <td th:text="${horario.inscritos}"></td>
-                <td th:text="${horario.diaSemana}"></td>
-                <td th:text="${horario.horaInicio}"></td>
-                <td th:text="${horario.horaFim}"></td>
-                <td th:text="${horario.dataAula}"></td>
-                <td th:text="${horario.sala}"></td>
-                <td th:text="${horario.lotacaoSala}"></td>
-            </tr>
-        </tbody>
-    </table>
-    <p>Total de horários: <span th:text="${horarios.size()}"></span></p>
+    <div class="container">
+        <div id="calendar"></div>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Initialize the calendar
+        $('#calendar').fullCalendar({
+            // Add your calendar options here
+            // For example:
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: '2023-04-18',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+        });
+    });   
+</script>
+
 </html>
