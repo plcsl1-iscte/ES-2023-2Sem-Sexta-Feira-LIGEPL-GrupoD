@@ -1,4 +1,8 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "plcsl1-iscte",
+        "projectKey": "plcsl1-iscte_ES-2023-LIGEPL-Grupo-D"
+    }
 }
