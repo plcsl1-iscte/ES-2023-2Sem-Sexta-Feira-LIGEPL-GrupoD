@@ -1,3 +1,6 @@
+iscte\timetable\management\ConversorHorario.class
+iscte\timetable\management\Horario.class
+iscte\Controllers\HorarioReader.class
 iscte\Controllers\HorarioController.class
+iscte\timetable\models\Horario.class
 iscte\Application.class
-iscte\timetable\management\ManageTimetable.class

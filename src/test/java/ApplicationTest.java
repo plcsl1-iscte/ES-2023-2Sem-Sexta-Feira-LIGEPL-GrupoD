@@ -1,7 +1,19 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import iscte.Application;
+import iscte.Controllers.HorarioController;
+import iscte.Controllers.HorarioReader;
+import iscte.timetable.management.ConversorHorario;
+import iscte.timetable.models.Horario;
+
 public class ApplicationTest {
+
+    @Test
+    public void runAllTests(){
+        
+    }
+
     @Test
     public void test() {
         assertTrue(true);
