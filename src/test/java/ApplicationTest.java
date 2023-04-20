@@ -10,7 +10,12 @@ import iscte.timetable.models.Horario;
 public class ApplicationTest {
 
     @Test
-    public void runAllTests(){
+    public void runAllTests() {
+        testHorarioReader();
+        testHorarioController();
+        testHorario();
+        testConversorHorario();
+        testApplication();
         
     }
 
