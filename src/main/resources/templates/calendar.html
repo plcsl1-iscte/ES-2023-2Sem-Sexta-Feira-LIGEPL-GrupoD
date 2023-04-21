@@ -1,126 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Calendário</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
-    <link rel="stylesheet" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
-                <div class="d-flex flex-column align-items-center m-3 mt-3">
-                    <div class="mb-3 w-100">
-                        <form id="handleFileUpload" method="post" enctype="multipart/form-data" th:action="@{/handleFileUpload}"
-                            th:object="${model}">
-                            <div class="cursor-pointer">
-                                <label for="formFile"
-                                    class="text-center btn btn-primary btn-block font-weight-normal">Importar
-                                    Horário</label>
-                                <input class="form-control form-control-sm" type="file" id="formFile" name="file">
-                                <input type="text" id="path" name="path">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <button class="btn btn-primary btn-block" id="exportCSV">Exportar CSV</button>
-                    </div>
-                    <div class="w-100">
-                        <button class="btn btn-primary btn-block" id="exportJSON">Exportar JSON</button>
-                    </div>
-                    <div class="card my-3 d-none" id="event-card">
-                        <div class="card-body">
-                            <h5 class="card-title" id="event-card-title"></h5>
-                            <p class="card-text" id="event-card-description"></p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-secondary" id="close-event-card">Close</button>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+          <div class="d-flex flex-column align-items-center m-3 mt-3">
+            <div class="mb-3 w-100">
+              <form
+                id="handleFileUpload"
+                method="post"
+                enctype="multipart/form-data"
+                th:action="@{/handleFileUpload}"
+                th:object="${model}"
+              >
+                <div class="cursor-pointer">
+                  <label
+                    for="formFile"
+                    class="text-center btn btn-primary btn-block font-weight-normal"
+                    >Importar Horário</label
+                  >
+                  <input
+                    class="form-control form-control-sm"
+                    type="file"
+                    id="formFile"
+                    name="file"
+                  />
+                  <input type="text" id="path" name="path" />
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
-            <div class="col py-3">
-                <div class="row">
-                    <div class="col-8 mx-auto">
-                        <div id="calendar"></div>
-                    </div>
-                </div>
+            <form action="/download/csv" method="post" id="csvForm">
+              <div class="mb-3 w-100">
+                <button class="btn btn-primary btn-block" id="exportCSV">
+                  Exportar CSV
+                </button>
+              </div>
+            </form>
+            <form action="/download/json" method="post" id="jsonForm">
+              <div class="w-100">
+                <button class="btn btn-primary btn-block" id="exportJSON">
+                  Exportar JSON
+                </button>
+              </div>
+            </form>
+            <div class="card my-3 d-none" id="event-card">
+              <div class="card-body">
+                <h5 class="card-title" id="event-card-title"></h5>
+                <p class="card-text" id="event-card-description"></p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="close-event-card"
+                >
+                  Close
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col py-3">
+          <div class="row">
+            <div class="col-8 mx-auto">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- add this code for the event card -->
     <div class="card my-3 d-none" id="event-card">
-        <div class="card-body">
-            <h5 class="card-title" id="event-card-title"></h5>
-            <p class="card-text" id="event-card-description"></p>
-        </div>
-        <div class="card-footer">
-            <button type="button" class="btn btn-secondary" id="close-event-card">Close</button>
-        </div>
+      <div class="card-body">
+        <h5 class="card-title" id="event-card-title"></h5>
+        <p class="card-text" id="event-card-description"></p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-secondary" id="close-event-card">
+          Close
+        </button>
+      </div>
     </div>
+  </body>
+  <script th:inline="javascript">
+    
+    document.getElementById("exportCSV").addEventListener("click", function () {
+        document.getElementById("csvForm").submit();
+    });
+    
+    document.getElementById("exportJSON").addEventListener("click", function () {
+        document.getElementById("jsonForm").submit();
+    });
 
-</body>
-<script th:inline="javascript">
-    var horarios = /*[[${horarios}]]*/[];
+    
+    var horarios = /*[[${horarios}]]*/ [];
 
     $(document).ready(function () {
-        $('#calendar').fullCalendar({
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-            },
-            defaultDate: new Date(),
-            navLinks: true,
+      $("#calendar").fullCalendar({
+        header: {
+          left: "prev,next today",
+          center: "title",
+          right: "month,agendaWeek,agendaDay",
+        },
+        defaultDate: new Date(),
+        navLinks: true,
+        editable: true,
+        eventLimit: true,
+        events: horarios.map(function (horario) {
+          return {
+            title: horario.curso,
+            start: moment(
+              horario.dataAula + "T" + horario.horaInicio,
+              "DD/MM/YYYYTHH:mm:ss"
+            ),
+            end: moment(
+              horario.dataAula + "T" + horario.horaFim,
+              "DD/MM/YYYYTHH:mm:ss"
+            ),
             editable: true,
-            eventLimit: true,
-            events: horarios.map(function (horario) {
-                return {
-                    title: horario.curso,
-                    start: moment(horario.dataAula + 'T' + horario.horaInicio, 'DD/MM/YYYYTHH:mm:ss'),
-                    end: moment(horario.dataAula + 'T' + horario.horaFim, 'DD/MM/YYYYTHH:mm:ss'),
-                    editable: true,
-                    allDay: false,
-                    description: 'Curso: ' + horario.curso + '<br>' +
-                        'Unidade Curricular: ' + horario.unidadeCurricular + '<br>' +
-                        'Turno: ' + horario.turno + '<br>' +
-                        'Turma: ' + horario.turma + '<br>' +
-                        'Inscritos no turno: ' + horario.inscritos + '<br>' +
-                        'Dia da semana: ' + horario.diaSemana + '<br>' +
-                        'Hora início da aula: ' + horario.horaInicio + '<br>' +
-                        'Hora fim da aula: ' + horario.horaFim + '<br>' +
-                        'Data da aula: ' + horario.dataAula + '<br>' +
-                        'Sala atribuída à aula: ' + horario.sala + '<br>' +
-                        'Lotação da sala: ' + horario.lotacaoSala
-                };
-            }),
-            eventClick: function (event) {
-                // set the title and description of the event card
-                $('#event-card-title').text(event.title);
-                $('#event-card-description').html(event.description);
-                // show the event card
-                $('#event-card').removeClass('d-none');
-            },
-        });
-        // add click event listener to the close button
-        $('#close-event-card').click(function () {
-            // hide the event card
-            $('#event-card').addClass('d-none');
-        });
+            allDay: false,
+            description:
+              "Curso: " +
+              horario.curso +
+              "<br>" +
+              "Unidade Curricular: " +
+              horario.unidadeCurricular +
+              "<br>" +
+              "Turno: " +
+              horario.turno +
+              "<br>" +
+              "Turma: " +
+              horario.turma +
+              "<br>" +
+              "Inscritos no turno: " +
+              horario.inscritos +
+              "<br>" +
+              "Dia da semana: " +
+              horario.diaSemana +
+              "<br>" +
+              "Hora início da aula: " +
+              horario.horaInicio +
+              "<br>" +
+              "Hora fim da aula: " +
+              horario.horaFim +
+              "<br>" +
+              "Data da aula: " +
+              horario.dataAula +
+              "<br>" +
+              "Sala atribuída à aula: " +
+              horario.sala +
+              "<br>" +
+              "Lotação da sala: " +
+              horario.lotacaoSala,
+          };
+        }),
+        eventClick: function (event) {
+          // set the title and description of the event card
+          $("#event-card-title").text(event.title);
+          $("#event-card-description").html(event.description);
+          // show the event card
+          $("#event-card").removeClass("d-none");
+        },
+      });
+      // add click event listener to the close button
+      $("#close-event-card").click(function () {
+        // hide the event card
+        $("#event-card").addClass("d-none");
+      });
     });
-</script>
-
+  </script>
 </html>
