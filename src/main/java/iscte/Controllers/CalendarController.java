@@ -31,23 +31,19 @@ public class CalendarController {
 
     @GetMapping("/")
     public String displayCalendar(Model model, String filePath) {
-        if (model != null) {
-            fileToList(filePath);
+        if (model != null && filePath != null) {
+            HorarioReader reader = new HorarioReader(filePath);
+            List<Horario> horarios = reader.read();
             model.addAttribute("horarios", horarios);
         }
         return "calendar";
     }
 
     @PostMapping("/handleFileUpload")
-    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model)
-            throws IOException, ServletException {
-        Part filePart = request.getPart("file");
-        String path = "";
-
-        if (filePart != null) {
-            path = request.getParameter("path");
-        }
-
+    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+        String path = request.getParameter("path");
+        if (path == null)
+            path = "";
         return displayCalendar(model, path);
     }
 

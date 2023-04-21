@@ -26,7 +26,7 @@ public class HorarioReader {
             String line;
             if (path.endsWith(".csv")) {
                 while ((line = br.readLine()) != null) {
-                    String[] tokens = line.split(",");
+                    String[] tokens = line.split(";");
                     if (tokens.length != 11) {
                         System.err.println("Invalid input line: " + line);
                         continue;
