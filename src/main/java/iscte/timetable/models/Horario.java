@@ -1,16 +1,29 @@
 package iscte.timetable.models;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 public class Horario {
+    @CsvBindByPosition(position = 0)
     private String curso;
+    @CsvBindByPosition(position = 1)
     private String unidadeCurricular;
+    @CsvBindByPosition(position = 2)
     private String turno;
+    @CsvBindByPosition(position = 3)
     private String turma;
+    @CsvBindByPosition(position = 4)
     private String inscritos;
+    @CsvBindByPosition(position = 5)
     private String diaSemana;
+    @CsvBindByPosition(position = 6)
     private String horaInicio;
+    @CsvBindByPosition(position = 7)
     private String horaFim;
+    @CsvBindByPosition(position = 8)
     private String dataAula;
+    @CsvBindByPosition(position = 9)
     private String sala;
+    @CsvBindByPosition(position = 10)
     private String lotacaoSala;
 
     public Horario() {
