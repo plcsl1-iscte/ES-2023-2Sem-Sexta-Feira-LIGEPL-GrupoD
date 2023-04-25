@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Horario.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ISCTE TimeTable Management</a> &gt; <a href="index.source.html" class="el_package">iscte.timetable.models</a> &gt; <span class="el_source">Horario.java</span></div><h1>Horario.java</h1><pre class="source lang-java linenums">package iscte.timetable.models;
+
+public class Horario {
+    private String curso;
+    private String unidadeCurricular;
+    private String turno;
+    private String turma;
+    private String inscritos;
+    private String diaSemana;
+    private String horaInicio;
+    private String horaFim;
+    private String dataAula;
+    private String sala;
+    private String lotacaoSala;
+
+<span class="nc" id="L16">    public Horario() {</span>
+<span class="nc" id="L17">    }</span>
+
+<span class="fc" id="L19">    public Horario(String curso, String unidadeCurricular, String turno, String turma, String inscritos,</span>
+                   String diaSemana, String horaInicio, String horaFim, String dataAula, String sala, String lotacaoSala) {
+<span class="fc" id="L21">        this.curso = curso;</span>
+<span class="fc" id="L22">        this.unidadeCurricular = unidadeCurricular;</span>
+<span class="fc" id="L23">        this.turno = turno;</span>
+<span class="fc" id="L24">        this.turma = turma;</span>
+<span class="fc" id="L25">        this.inscritos = inscritos;</span>
+<span class="fc" id="L26">        this.diaSemana = diaSemana;</span>
+<span class="fc" id="L27">        this.horaInicio = horaInicio;</span>
+<span class="fc" id="L28">        this.horaFim = horaFim;</span>
+<span class="fc" id="L29">        this.dataAula = dataAula;</span>
+<span class="fc" id="L30">        this.sala = sala;</span>
+<span class="fc" id="L31">        this.lotacaoSala = lotacaoSala;</span>
+<span class="fc" id="L32">    }</span>
+
+    public String getCurso() {
+<span class="fc" id="L35">        return curso;</span>
+    }
+
+    public void setCurso(String curso) {
+<span class="nc" id="L39">        this.curso = curso;</span>
+<span class="nc" id="L40">    }</span>
+
+    public String getUnidadeCurricular() {
+<span class="fc" id="L43">        return unidadeCurricular;</span>
+    }
+
+    public void setUnidadeCurricular(String unidadeCurricular) {
+<span class="nc" id="L47">        this.unidadeCurricular = unidadeCurricular;</span>
+<span class="nc" id="L48">    }</span>
+
+    public String getTurno() {
+<span class="fc" id="L51">        return turno;</span>
+    }
+
+    public void setTurno(String turno) {
+<span class="nc" id="L55">        this.turno = turno;</span>
+<span class="nc" id="L56">    }</span>
+
+    public String getTurma() {
+<span class="fc" id="L59">        return turma;</span>
+    }
+
+    public void setTurma(String turma) {
+<span class="nc" id="L63">        this.turma = turma;</span>
+<span class="nc" id="L64">    }</span>
+
+    public String getInscritos() {
+<span class="fc" id="L67">        return inscritos;</span>
+    }
+
+    public void setInscritos(String inscritos) {
+<span class="nc" id="L71">        this.inscritos = inscritos;</span>
+<span class="nc" id="L72">    }</span>
+
+    public String getDiaSemana() {
+<span class="fc" id="L75">        return diaSemana;</span>
+    }
+
+    public void setDiaSemana(String diaSemana) {
+<span class="nc" id="L79">        this.diaSemana = diaSemana;</span>
+<span class="nc" id="L80">    }</span>
+
+    public String getHoraInicio() {
+<span class="fc" id="L83">        return horaInicio;</span>
+    }
+
+    public void setHoraInicio(String horaInicio) {
+<span class="nc" id="L87">        this.horaInicio = horaInicio;</span>
+<span class="nc" id="L88">    }</span>
+
+    public String getHoraFim() {
+<span class="fc" id="L91">        return horaFim;</span>
+    }
+
+    public void setHoraFim(String horaFim) {
+<span class="nc" id="L95">        this.horaFim = horaFim;</span>
+<span class="nc" id="L96">    }</span>
+
+    public String getDataAula() {
+<span class="fc" id="L99">        return dataAula;</span>
+    }
+
+    public void setDataAula(String dataAula) {
+<span class="nc" id="L103">        this.dataAula = dataAula;</span>
+<span class="nc" id="L104">    }</span>
+
+    public String getSala() {
+<span class="fc" id="L107">        return sala;</span>
+    }
+
+    public void setSala(String sala) {
+<span class="nc" id="L111">        this.sala = sala;</span>
+<span class="nc" id="L112">    }</span>
+
+    public String getLotacaoSala() {
+<span class="fc" id="L115">        return lotacaoSala;</span>
+    }
+
+    public void setLotacaoSala(String lotacaoSala) {
+<span class="nc" id="L119">        this.lotacaoSala = lotacaoSala;</span>
+<span class="nc" id="L120">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

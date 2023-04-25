@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConversorHorario.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ISCTE TimeTable Management</a> &gt; <a href="index.source.html" class="el_package">iscte.timetable.management</a> &gt; <span class="el_source">ConversorHorario.java</span></div><h1>ConversorHorario.java</h1><pre class="source lang-java linenums">package iscte.timetable.management;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+
+import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.dataformat.csv.*;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonPropertyOrder({&quot;curso&quot;, &quot;unidadeCurricular&quot;, &quot;turno&quot;, &quot;turma&quot;, &quot;inscritosNoTurno&quot;, &quot;diaDaSemana&quot;, &quot;horaInicioAula&quot;, &quot;horaFimAula&quot;, &quot;dataAula&quot;, &quot;salaAtribuidaAula&quot;, &quot;lotacaoSala&quot;})
+<span class="nc" id="L17">class Horario {</span>
+    @JsonProperty(&quot;curso&quot;)
+    public String curso;
+    @JsonProperty(&quot;unidadeCurricular&quot;)
+    public String unidadeCurricular;
+    @JsonProperty(&quot;turno&quot;)
+    public String turno;
+    @JsonProperty(&quot;turma&quot;)
+    public String turma;
+    @JsonProperty(&quot;inscritosNoTurno&quot;)
+    public int inscritosNoTurno;
+    @JsonProperty(&quot;diaDaSemana&quot;)
+    public String diaDaSemana;
+    @JsonProperty(&quot;horaInicioAula&quot;)
+    public String horaInicioAula;
+    @JsonProperty(&quot;horaFimAula&quot;)
+    public String horaFimAula;
+    @JsonProperty(&quot;dataAula&quot;)
+    public String dataAula;
+    @JsonProperty(&quot;salaAtribuidaAula&quot;)
+    public String salaAtribuidaAula;
+    @JsonProperty(&quot;lotacaoSala&quot;)
+    public int lotacaoSala;
+}
+
+
+<span class="fc" id="L43">public class ConversorHorario {</span>
+
+    public static void main(String[] args) {
+        try {
+<span class="nc" id="L47">            String Repo = &quot;src/main/java/iscte/timetable/files/&quot;;</span>
+
+<span class="nc" id="L49">            List&lt;Horario&gt; horarios = lerCSV(Repo + &quot;horario-exemplo.csv&quot;);</span>
+<span class="nc" id="L50">            escreverJSON(Repo + &quot;horario-exemplo.json&quot;, horarios);</span>
+
+<span class="nc" id="L52">            List&lt;Horario&gt; horariosJson = lerJSON(Repo + &quot;horario-exemplo.json&quot;);</span>
+<span class="nc" id="L53">            escreverCSV(Repo + &quot;horario-exemplo-convertido.csv&quot;, horariosJson);</span>
+
+<span class="nc" id="L55">        } catch (IOException e) {</span>
+<span class="nc" id="L56">            e.printStackTrace();</span>
+        }
+<span class="nc" id="L58">    }</span>
+
+    private static List&lt;Horario&gt; lerCSV(String arquivoCSV) throws IOException {
+<span class="nc" id="L61">        File csvFile = new File(arquivoCSV);</span>
+<span class="nc" id="L62">        List&lt;Horario&gt; horarios = new ArrayList&lt;&gt;();</span>
+    
+<span class="nc" id="L64">        try (Reader fileReader = new InputStreamReader(new FileInputStream(csvFile), StandardCharsets.UTF_8);</span>
+<span class="nc" id="L65">             CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT.withFirstRecordAsHeader().withDelimiter(','))) {</span>
+    
+<span class="nc bnc" id="L67" title="All 2 branches missed.">            for (CSVRecord record : csvParser) {</span>
+<span class="nc" id="L68">                Horario horario = new Horario();</span>
+<span class="nc" id="L69">                horario.curso = record.get(0);</span>
+<span class="nc" id="L70">                horario.unidadeCurricular = record.get(1);</span>
+<span class="nc" id="L71">                horario.turno = record.get(2);</span>
+<span class="nc" id="L72">                horario.turma = record.get(3);</span>
+<span class="nc" id="L73">                String inscritosNoTurnoStr = record.get(4);</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">                horario.inscritosNoTurno = inscritosNoTurnoStr.isEmpty() ? 0 : Integer.parseInt(inscritosNoTurnoStr);</span>
+<span class="nc" id="L75">                horario.diaDaSemana = record.get(5);</span>
+<span class="nc" id="L76">                horario.horaInicioAula = record.get(6);</span>
+<span class="nc" id="L77">                horario.horaFimAula = record.get(7);</span>
+<span class="nc" id="L78">                horario.dataAula = record.get(8);</span>
+<span class="nc" id="L79">                horario.salaAtribuidaAula = record.get(9);</span>
+<span class="nc" id="L80">                String lotacaoSalaStr = record.get(10);</span>
+<span class="nc bnc" id="L81" title="All 2 branches missed.">                horario.lotacaoSala = lotacaoSalaStr.isEmpty() ? 0 : Integer.parseInt(lotacaoSalaStr);</span>
+    
+<span class="nc" id="L83">                horarios.add(horario);</span>
+            }
+        }
+    
+<span class="nc" id="L87">        return horarios;</span>
+    }
+    
+
+    private static void escreverJSON(String arquivoJSON, List&lt;Horario&gt; horarios) throws IOException {
+<span class="nc" id="L92">        ObjectMapper jsonMapper = new ObjectMapper();</span>
+<span class="nc" id="L93">        jsonMapper.writeValue(new File(arquivoJSON), horarios);</span>
+<span class="nc" id="L94">    }</span>
+
+    private static List&lt;Horario&gt; lerJSON(String arquivoJSON) throws IOException {
+<span class="nc" id="L97">        ObjectMapper jsonMapper = new ObjectMapper();</span>
+<span class="nc" id="L98">        return Arrays.asList(jsonMapper.readValue(new File(arquivoJSON), Horario[].class));</span>
+    }
+
+    private static void escreverCSV(String arquivoCSV, List&lt;Horario&gt; horarios) throws IOException {
+<span class="nc" id="L102">        CsvMapper csvMapper = new CsvMapper();</span>
+<span class="nc" id="L103">        CsvSchema.Builder schemaBuilder = CsvSchema.builder();</span>
+<span class="nc" id="L104">        schemaBuilder.addColumn(&quot;curso&quot;);</span>
+<span class="nc" id="L105">        schemaBuilder.addColumn(&quot;unidadeCurricular&quot;);</span>
+<span class="nc" id="L106">        schemaBuilder.addColumn(&quot;turno&quot;);</span>
+<span class="nc" id="L107">        schemaBuilder.addColumn(&quot;turma&quot;);</span>
+<span class="nc" id="L108">        schemaBuilder.addColumn(&quot;inscritosNoTurno&quot;, CsvSchema.ColumnType.NUMBER);</span>
+<span class="nc" id="L109">        schemaBuilder.addColumn(&quot;diaDaSemana&quot;);</span>
+<span class="nc" id="L110">        schemaBuilder.addColumn(&quot;horaInicioAula&quot;);</span>
+<span class="nc" id="L111">        schemaBuilder.addColumn(&quot;horaFimAula&quot;);</span>
+<span class="nc" id="L112">        schemaBuilder.addColumn(&quot;dataAula&quot;);</span>
+<span class="nc" id="L113">        schemaBuilder.addColumn(&quot;salaAtribuidaAula&quot;);</span>
+<span class="nc" id="L114">        schemaBuilder.addColumn(&quot;lotacaoSala&quot;, CsvSchema.ColumnType.NUMBER);</span>
+
+<span class="nc" id="L116">        CsvSchema schema = schemaBuilder.build().withHeader().withColumnSeparator(',');</span>
+
+<span class="nc" id="L118">        csvMapper.writer(schema).writeValue(new File(arquivoCSV), horarios);</span>
+<span class="nc" id="L119">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
