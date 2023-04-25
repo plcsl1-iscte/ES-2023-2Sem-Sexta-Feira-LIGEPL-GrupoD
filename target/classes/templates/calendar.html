@@ -32,6 +32,16 @@
                 </div>
               </div>
             </form>
+            <form id="handleURLUpload" method="post" enctype="multipart/form-data" th:action="@{/handleURLUpload}"
+              th:object="${model}">
+              <div class="input-group mb-3">
+                <input type="text" id="url" name="CalendarURL" class="form-control"
+                  placeholder="Fénix URL...">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">WebCal</button>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="mb-3 w-100">
             <form action="/download/csv" method="post" id="csvForm">

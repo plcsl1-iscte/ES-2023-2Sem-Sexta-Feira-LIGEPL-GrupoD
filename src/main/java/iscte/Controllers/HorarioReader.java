@@ -51,6 +51,12 @@ public class HorarioReader {
                 }.getType();
                 List<Horario> jsonHorarios = gson.fromJson(br, type);
                 horarios.addAll(jsonHorarios);
+
+            } else if (path.startsWith("http")) {
+                //read from web calendar url get event and add to horarios to be added to the model
+
+                
+
             } else {
                 System.err.println("Unsupported file type");
             }
