@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ISCTE TimeTable Management,iscte.Controllers,HorarioController,17,6,0,0,5,2,1,1,1,1
+ISCTE TimeTable Management,iscte.Controllers,HorarioReader,110,20,8,0,28,8,4,2,0,2
+ISCTE TimeTable Management,iscte.timetable.models,Horario,47,69,0,0,24,24,12,12,12,12
+ISCTE TimeTable Management,iscte,Application,5,3,0,0,2,1,1,1,1,1
+ISCTE TimeTable Management,iscte.timetable.management,ConversorHorario,264,3,6,0,50,1,8,1,5,1
+ISCTE TimeTable Management,iscte.timetable.management,Horario,3,0,0,0,1,0,1,0,1,0
