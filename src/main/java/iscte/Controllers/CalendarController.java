@@ -28,6 +28,8 @@ import javax.servlet.http.Part;
 public class CalendarController {
 
     private List<Horario> horarios = null;
+    private ArrayList<Horario> horariosSobrepostos = new ArrayList<Horario>();
+    private ArrayList<Horario> horariosSobrelotacao = new ArrayList<Horario>();
 
     @GetMapping("/")
     public String displayCalendar(Model model, String filePath) {
@@ -87,6 +89,36 @@ public class CalendarController {
         for (Horario h : horarios) {
             if (h.toString().equals(rmHorario.toString())) {
                 horarios.remove(rmHorario);
+            }
+        }
+    }
+
+    private void checkForOverlappingLessons() {
+        for (int i = 0; i < horarios.size(); i++) {
+            for (int j = i + 1; j < horarios.size(); j++) {
+                Horario horario1 = horarios.get(i);
+                Horario horario2 = horarios.get(j);
+                if (horario1.getDataAula().equals(horario2.getDataAula())) {
+                    if (horario1.getHoraInicio().compareTo(horario2.getHoraFim()) <= 0 &&
+                            horario1.getHoraFim().compareTo(horario2.getHoraInicio()) >= 0) {
+                        System.out.println("Aulas sobrepostas: ");
+                        System.out.println(horario1.toString());
+                        System.out.println(horario2.toString());
+                    }
+                }
+            }
+        }
+    }
+
+    public void overbooked() {
+        for (Horario h : horarios) {
+            int capacidadeSala = Integer.parseInt(h.getLotacaoSala());
+            int numInscritos = Integer.parseInt(h.getInscritos());
+            if (capacidadeSala < numInscritos) {
+                horariosSobrelotacao.add(h);
+
+                // System.out.println("a sala "+ h.getSala() + "está sobrelotada na cadeira de:
+                // " + h.getUnidadeCurricular());
             }
         }
     }
