@@ -41,12 +41,21 @@ public class CalendarController {
         return "calendar";
     }
 
+
     @PostMapping("/handleFileUpload")
     public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
         String path = request.getParameter("path");
         if (path == null)
             path = "";
         return displayCalendar(model, path);
+    }
+
+    @PostMapping("/handleURLUpload")
+    public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+        String url = request.getParameter("url");
+        if (url == null)
+            url = "";
+        return  displayCalendar(model, url);
     }
 
     @PostMapping("/download/csv")
