@@ -1,5 +1,8 @@
 package iscte.timetable.models;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 import com.opencsv.bean.CsvBindByPosition;
 
 public class Horario {
@@ -27,6 +30,17 @@ public class Horario {
     private String lotacaoSala;
 
     public Horario() {
+        this.curso = "MISSING VALUE";
+        this.unidadeCurricular = "MISSING VALUE";
+        this.turno = "MISSING VALUE";
+        this.turma = "MISSING VALUE";
+        this.inscritos = "MISSING VALUE";
+        this.diaSemana = "MISSING VALUE";
+        this.horaInicio = "MISSING VALUE";
+        this.horaFim = "MISSING VALUE";
+        this.dataAula = "MISSING VALUE";
+        this.sala = "MISSING VALUE";
+        this.lotacaoSala = "MISSING VALUE";
     }
 
     public Horario(String curso, String unidadeCurricular, String turno, String turma, String inscritos,
@@ -131,5 +145,28 @@ public class Horario {
     public void setLotacaoSala(String lotacaoSala) {
         this.lotacaoSala = lotacaoSala;
     }
+
+    public void setStartTime(LocalDateTime startTime) {
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+        setDataAula(startTime.format(dateFormatter));
+        setHoraInicio(startTime.format(timeFormatter));
+    }
+
+    public void setEndTime(LocalDateTime endTime) {
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        setHoraFim(endTime.format(timeFormatter));
+    }
+
+    @Override
+    public String toString() {
+        return "Horario [curso=" + curso + ", unidadeCurricular=" + unidadeCurricular + ", turno=" + turno + ", turma="
+                + turma + ", inscritos=" + inscritos + ", diaSemana=" + diaSemana + ", horaInicio=" + horaInicio
+                + ", horaFim=" + horaFim + ", dataAula=" + dataAula + ", sala=" + sala + ", lotacaoSala=" + lotacaoSala
+                + "]";
+    }
+
+    
 
 }
