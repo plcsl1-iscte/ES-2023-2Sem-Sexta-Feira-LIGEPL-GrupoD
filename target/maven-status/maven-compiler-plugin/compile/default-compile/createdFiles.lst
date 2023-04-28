@@ -1,3 +1,4 @@
+iscte\Controllers\overbooking.class
 iscte\timetable\management\ConversorHorario.class
 iscte\timetable\management\Horario.class
 iscte\Controllers\HorarioReader.class

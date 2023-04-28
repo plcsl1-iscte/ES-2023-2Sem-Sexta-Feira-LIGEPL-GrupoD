@@ -209,4 +209,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz4fnFO9gybBud7tM2J1R1e7S0Sf+j81J7FhyqKgG4SE4bX3gaSfAA4IcW" crossorigin="anonymous"></script>
 
+
+  <!-- Messages to display de overlapping and overbook -->
+<p th:if="${overlappingLessonsMessage}" th:text="${overlappingLessonsMessage}"></p>
+<p th:if="${overbookedMessage}" th:text="${overbookedMessage}"></p>
+
+<div th:if="${message}" class="alert alert-success" role="alert">
+  <p th:text="${message}"></p>
+</div>
+
 </html>
