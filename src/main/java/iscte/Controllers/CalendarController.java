@@ -7,7 +7,10 @@ import iscte.timetable.models.Horario;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -31,9 +34,17 @@ public class CalendarController {
     if (model != null && filePath != null) {
       HorarioReader reader = new HorarioReader(filePath);
       List<Horario> horarios = reader.read();
-      System.out.println("N. de horarios:"+horarios.size());
-      for(Horario s : horarios) System.out.println(s.toString()); 
+      System.out.println("N. de horarios:" + horarios.size());
+      for (Horario s : horarios) System.out.println(s.toString());
+      Set<String> uniqueUCs = new HashSet<>();
+      for (Horario horario : horarios) {
+        uniqueUCs.add(horario.getUnidadeCurricular());
+      }
+      System.out.println(uniqueUCs.size());
+      for(String s : uniqueUCs) System.out.println("UC: "+s);
+
       model.addAttribute("horarios", horarios);
+      model.addAttribute("ucs", uniqueUCs);
     }
     return "calendar";
   }
@@ -112,7 +123,7 @@ public class CalendarController {
       }
     }
   }
-   
+
   private void checkForOverlappingLessons(Model model) {
     for (int i = 0; i < horarios.size(); i++) {
       for (int j = i + 1; j < horarios.size(); j++) {
@@ -138,7 +149,7 @@ public class CalendarController {
       );
     }
   }
-   
+
   public void overbooked(Model model) {
     for (Horario h : horarios) {
       int capacidadeSala = Integer.parseInt(h.getLotacaoSala());

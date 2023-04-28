@@ -2,7 +2,16 @@
     font-size: 10px;
     line-height: 1.2;
 }
+
 .fc-day-number {
     color: black;
-  }
-  
+}
+
+.form-select {
+    word-wrap: normal;
+    width: 330px !important;
+}
+
+.ucs-container{
+    height: 300px;
+}
