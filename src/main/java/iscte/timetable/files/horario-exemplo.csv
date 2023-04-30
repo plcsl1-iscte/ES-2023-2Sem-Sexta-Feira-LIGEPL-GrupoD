@@ -1,7 +1,968 @@
-﻿Curso,Unidade Curricular,Turno,Turma,Inscritos no turno,Dia da semana,Hora inÃ­cio da aula,Hora fim da aula,Data da aula,Sala atribuÃ­da Ã  aula,LotaÃ§Ã£o da sala
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Sex,13:00:00,14:30:00,02/12/2022,AA2.25,34
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Qua,13:00:00,14:30:00,23/11/2022,AA2.25,34
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Qua,13:00:00,14:30:00,16/11/2022,AA2.25,34
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Qua,13:00:00,14:30:00,09/11/2022,AA2.25,34
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Qua,13:00:00,14:30:00,02/11/2022,AA2.25,34
-ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Seg,13:00:00,14:30:00,28/11/2022,AA2.25,34
+﻿"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,16:00:00,17:30:00,13/12/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,16:00:00,17:30:00,06/12/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,16:00:00,17:30:00,29/11/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,16:00:00,17:30:00,22/11/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,14:30:00,16:00:00,13/12/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,14:30:00,16:00:00,06/12/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,14:30:00,16:00:00,29/11/2022,C5.05,30
+"METI, MEI","SeguranÃ§a em Redes e Sistemas de InformaÃ§Ã£o",00010PL12,MEI-A2,9,Ter,14:30:00,16:00:00,22/11/2022,C5.05,30
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,16:00:00,17:30:00,07/12/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,16:00:00,17:30:00,30/11/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,16:00:00,17:30:00,23/11/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,16:00:00,17:30:00,16/11/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,14:30:00,16:00:00,07/12/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,14:30:00,16:00:00,30/11/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,14:30:00,16:00:00,23/11/2022,C6.06,35
+LETI,"ModulaÃ§Ã£o e CodificaÃ§Ã£o",L0787PL03,"ET-C2, ET-C1",43,Qua,14:30:00,16:00:00,16/11/2022,C6.06,35
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,15/12/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,24/11/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,17/11/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,10/11/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,03/11/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,27/10/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,20/10/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,13/10/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,06/10/2022,C5.09,56
+"MEECult, MEGC, MHMC","Cultura Portuguesa ContemporÃ¢nea",01984TP01,"MEGCB1, MEGC-A2, MEGC-A1, MHMCSECB1",37,Qui,18:00:00,20:00:00,29/09/2022,C5.09,56
+MPRI,"DissertaÃ§Ã£o em Psicologia das RelaÃ§Ãµes Interculturais (2020)",03793S01,MPRI-B1,13,Ter,13:00:00,15:00:00,06/12/2022,AA2.24,30
+MPRI,"DissertaÃ§Ã£o em Psicologia das RelaÃ§Ãµes Interculturais (2020)",03793S01,MPRI-B1,13,Ter,13:00:00,15:00:00,15/11/2022,AA2.24,30
+MPRI,"DissertaÃ§Ã£o em Psicologia das RelaÃ§Ãµes Interculturais (2020)",03793S01,MPRI-B1,13,Ter,13:00:00,15:00:00,11/10/2022,AA2.24,30
+DP,"Treino de CompetÃªncias AcadÃ©micas em Psicologia (2020)",03788S01,DP-A1,7,Sex,09:00:00,13:00:00,02/12/2022,,0
+DP,"Treino de CompetÃªncias AcadÃ©micas em Psicologia (2020)",03788S01,DP-A1,7,Sex,11:00:00,12:00:00,21/10/2022,,0
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Seg,14:30:00,16:00:00,03/10/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Seg,13:00:00,14:30:00,03/10/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,13:00:00,14:30:00,12/10/2022,AA3.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,13:00:00,14:30:00,28/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,13:00:00,14:30:00,21/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,13:00:00,14:30:00,14/09/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,14:30:00,16:00:00,12/10/2022,AA3.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,14:30:00,16:00:00,28/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,14:30:00,16:00:00,21/09/2022,,0
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Qua,14:30:00,16:00:00,14/09/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,14:30:00,16:00:00,14/10/2022,AA3.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,14:30:00,16:00:00,07/10/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,14:30:00,16:00:00,30/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,14:30:00,16:00:00,23/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,14:30:00,16:00:00,16/09/2022,,0
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,13:00:00,14:30:00,14/10/2022,AA3.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,13:00:00,14:30:00,07/10/2022,C2.01,54
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,13:00:00,14:30:00,30/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,13:00:00,14:30:00,23/09/2022,AA2.29,50
+"MG, MGST","EstratÃ©gia e Desenvolvimento Empresarial",M8505TP05,MGA4,49,Sex,13:00:00,14:30:00,16/09/2022,C2.01,54
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,11/11/2022,AA3.26,30
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,04/11/2022,AA3.26,30
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,28/10/2022,AA3.26,30
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,21/10/2022,,0
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,14/10/2022,AA3.26,30
+CT,"GestÃ£o da Imagem Pessoal",02254TP02,CI-CT-02,28,Sex,16:00:00,18:00:00,07/10/2022,AA3.26,30
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,28/11/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,21/11/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,14/11/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,07/11/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,31/10/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,24/10/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,17/10/2022,AA3.30,24
+DS,"Teorias SociolÃ³gicas ClÃ¡ssicas: Grandes Obras",00064S01,DSA1,22,Seg,20:30:00,22:30:00,10/10/2022,AA3.30,24
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,06/12/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,29/11/2022,D1.14,27
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,22/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,15/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,08/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,25/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,18/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,11/10/2022,0S02,41
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,04/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,27/09/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,20/09/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,14:30:00,16:00:00,13/09/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,06/12/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,29/11/2022,D1.14,27
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,22/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,15/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,08/11/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,25/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,18/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,11/10/2022,0S02,41
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,04/10/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,27/09/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,20/09/2022,"1,00E+10",50
+"LS, LS-PL","AnÃ¡lise de Dados em CiÃªncias Sociais: Modelos de DependÃªncia",L6105TP01,SB1,41,Ter,13:00:00,14:30:00,13/09/2022,"1,00E+10",50
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,05/12/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,28/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,21/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,14/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,07/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,31/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,24/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,17/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,10/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,03/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,26/09/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,19:30:00,21:00:00,19/09/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,05/12/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,28/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,21/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,14/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,07/11/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,31/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,24/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,17/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,10/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,03/10/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,26/09/2022,C5.01,58
+METI,"Sistemas de ComunicaÃ§Ã£o MultimÃ©dia",SCMTP02,METI-PL-B1,10,Seg,18:00:00,19:30:00,19/09/2022,C5.01,58
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,14/12/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,07/12/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,30/11/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,23/11/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,16/11/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,09/11/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,02/11/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,26/10/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,19/10/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,12/10/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,28/09/2022,C6.07,56
+MSIAD,"Sistemas de InformaÃ§Ã£o AnalÃ­ticos I (2020)",03775TP02,MSIAD-A1,39,Qua,19:30:00,21:00:00,21/09/2022,C6.07,56
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,09/12/2022,D1.09,50
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,02/12/2022,D1.09,50
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,25/11/2022,D1.14,27
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,18/11/2022,D1.14,27
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,11/11/2022,D1.04,23
+"CT, LCP, LS, LS-PL","Pesquisa BibliogrÃ¡fica e AnÃ¡lise da InformaÃ§Ã£o",00678TP07,"CT-ESPP-03, CI-CT-03",21,Sex,11:00:00,13:00:00,04/11/2022,D1.09,50
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,16:00:00,17:30:00,19/10/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,16:00:00,17:30:00,12/10/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,16:00:00,17:30:00,28/09/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,16:00:00,17:30:00,21/09/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,14:30:00,16:00:00,19/10/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,14:30:00,16:00:00,12/10/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,14:30:00,16:00:00,28/09/2022,D1.14,27
+MEI,"IntroduÃ§Ã£o Ã  Aprendizagem AutomÃ¡tica",03766T03,MEI-A2,7,Qua,14:30:00,16:00:00,21/09/2022,D1.14,27
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,15/12/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,17/11/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,03/11/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,20/10/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,06/10/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,20:00:00,22:00:00,22/09/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,15/12/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,17/11/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,03/11/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,20/10/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,06/10/2022,"1,00E+10",50
+MDET,"SeminÃ¡rio sobre Temas de Direito das Empresas (Mdet)",03065TP01,MDETDEB1,18,Qui,18:00:00,20:00:00,22/09/2022,"1,00E+10",50
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,19:30:00,24/11/2022,C4.02,46
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,19:30:00,17/11/2022,C4.02,46
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,27/10/2022,AA3.28,44
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,03/11/2022,AA3.28,44
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,20/10/2022,D1.03,20
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,13/10/2022,D1.03,20
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,06/10/2022,D1.03,20
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,29/09/2022,D1.03,20
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Ter,18:00:00,20:00:00,27/09/2022,0S01,41
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,22/09/2022,,0
+ME,"SeminÃ¡rio de InvestigaÃ§Ã£o em Economia I (2.Âº Ciclo)",03423S01,MEB1,10,Qui,18:00:00,20:00:00,15/09/2022,AA2.25,34
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qua,14:00:00,18:00:00,19/10/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,14:00:00,18:00:00,13/10/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qua,14:00:00,18:00:00,12/10/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,14:00:00,18:00:00,06/10/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,16:00:00,18:00:00,29/09/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,14:00:00,16:00:00,29/09/2022,AA2.26,30
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qua,16:00:00,18:00:00,28/09/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qua,14:00:00,16:00:00,28/09/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,16:00:00,18:00:00,22/09/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qui,14:00:00,16:00:00,22/09/2022,,0
+CEFORGEP,"EstratÃ©gia e Valor PÃºblico (Forgep)","EVP_(F)TP01","23ÂºEdiÃ§Ã£o FORGEP",24,Qua,14:00:00,18:00:00,21/09/2022,,0
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,20:00:00,22:00:00,30/11/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,20:00:00,22:00:00,16/11/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,20:00:00,22:00:00,09/11/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,20:00:00,22:00:00,02/11/2022,,0
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,07/12/2022,,0
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,02/11/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,26/10/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,19/10/2022,"1,00E+03",50
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,12/10/2022,,0
+"CIECSH, MED","InovaÃ§Ã£o e PolÃ­ticas Verdes",02008TP01,"CI-ECSH 1",30,Qua,18:00:00,20:00:00,28/09/2022,"1,00E+03",50
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,18:00:00,19:30:00,06/10/2022,C5.01,58
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,18:00:00,19:30:00,29/09/2022,C2.01,54
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,18:00:00,19:30:00,22/09/2022,"1,00E+05",52
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,19:30:00,21:00:00,06/10/2022,C7.07,86
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,19:30:00,21:00:00,29/09/2022,C7.07,86
+CIISTA,"LaboratÃ³rioÂ de Internet das Coisas",LICT01,"CI-ISTA-Mest-2, CI-ISTA-Mest-1",44,Qui,19:30:00,21:00:00,22/09/2022,"1,00E+05",52
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,07/12/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,30/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,23/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,16/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,09/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,02/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,26/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,19/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,12/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,28/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,21/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,09:30:00,11:00:00,14/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,02/12/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,25/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,18/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,11/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,04/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,28/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,21/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,14/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,07/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,30/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,23/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Sex,08:00:00,09:30:00,16/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,07/12/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,30/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,23/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,16/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,09/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,02/11/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,26/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,19/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,12/10/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,28/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,21/09/2022,AA3.28,44
+"LG, LGIL","EstratÃ©gia Empresarial",EETP08,GILC1,26,Qua,11:00:00,12:30:00,14/09/2022,AA3.28,44
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,11:00:00,12:30:00,30/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,11:00:00,12:30:00,23/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,11:00:00,12:30:00,16/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,11:00:00,12:30:00,09/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,11:00:00,12:30:00,02/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,09:30:00,11:00:00,30/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,09:30:00,11:00:00,23/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,09:30:00,11:00:00,16/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,09:30:00,11:00:00,09/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Qua,09:30:00,11:00:00,02/11/2022,C5.09,56
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,11:00:00,12:30:00,28/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,11:00:00,12:30:00,21/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,11:00:00,12:30:00,14/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,11:00:00,12:30:00,07/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,11:00:00,12:30:00,31/10/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,09:30:00,11:00:00,28/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,09:30:00,11:00:00,21/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,09:30:00,11:00:00,14/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,09:30:00,11:00:00,07/11/2022,C2.02,36
+CCG,"Contabilidade de Grupos AvanÃ§ada",04287TP01,MCCGA1,37,Seg,09:30:00,11:00:00,31/10/2022,C2.02,36
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,13/12/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,06/12/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,29/11/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,22/11/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,15/11/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,08/11/2022,D1.12,27
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,25/10/2022,B3.01,87
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,18/10/2022,B3.01,87
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,11/10/2022,B3.01,87
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,04/10/2022,B3.01,87
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,27/09/2022,B3.01,87
+MIA,"Sistemas de ConstruÃ§Ã£o I",03824T01,"ARQ-B6, ARQ-B5, ARQ-B4, ARQ-B3, ARQ-B2, ARQ-B1",53,Ter,08:00:00,09:30:00,20/09/2022,B3.01,87
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Ter,13:00:00,14:30:00,13/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Ter,13:00:00,14:30:00,06/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Sex,13:00:00,14:30:00,16/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Sex,13:00:00,14:30:00,09/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Sex,14:30:00,16:00:00,16/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Sex,14:30:00,16:00:00,09/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Ter,14:30:00,16:00:00,13/12/2022,D1.07,27
+"LCD, LCD-PL","InteligÃªncia Artificial SimbÃ³lica para CiÃªncia de Dados",03605PL02,CDC1,28,Ter,14:30:00,16:00:00,06/12/2022,D1.07,27
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,02/12/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,25/11/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,18/11/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,11/11/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,04/11/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,28/10/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,21/10/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,14/10/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,07/10/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,30/09/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,23/09/2022,"2,00E+04",50
+LG,"Modelos Organizacionais",MOTP14,GB5,12,Sex,16:00:00,17:30:00,16/09/2022,"2,00E+04",50
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,20:30:00,22:30:00,28/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,20:30:00,22:30:00,21/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,20:30:00,22:30:00,14/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,20:30:00,22:30:00,07/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,18:00:00,20:00:00,28/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,18:00:00,20:00:00,21/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,18:00:00,20:00:00,14/11/2022,AA2.26,30
+DEA,"InvestigaÃ§Ã£o EmpÃ­rica em Ãfrica - MÃ©todos e TÃ©cnicas",03351TP01,DEA.EA1,9,Seg,18:00:00,20:00:00,07/11/2022,AA2.26,30
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,02/12/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,25/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,18/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,11/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,04/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,14/10/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,07/10/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,30/09/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,23/09/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,09:30:00,11:00:00,16/09/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,02/12/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,25/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,18/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,11/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,04/11/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,14/10/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,07/10/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,30/09/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,23/09/2022,AA3.28,44
+"TourDC, MGHT","Turismo de Compras e GestÃ£o de Retalho de Luxo",03442TP01,MGHT-Erasmus,27,Sex,11:00:00,12:30:00,16/09/2022,AA3.28,44
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,09/12/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,02/12/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,25/11/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,18/11/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,11/11/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,04/11/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,28/10/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,21/10/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,14/10/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,07/10/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,30/09/2022,AA3.29,50
+MIG,"IntroduÃ§Ã£o Ã  InvestigaÃ§Ã£o em InformÃ¡tica e GestÃ£o",IIIGTP02,MIG-B1,11,Sex,19:30:00,21:00:00,23/09/2022,AA3.29,50
+FP,"Normas e TÃ©cnicas de Auditoria PÃºblica","NTAP_(PGFPTP01","Turma Ãfrica e Timor",50,Sex,09:00:00,13:00:00,18/11/2022,,0
+FP,"Normas e TÃ©cnicas de Auditoria PÃºblica","NTAP_(PGFPTP01","Turma Ãfrica e Timor",50,Qui,09:00:00,13:00:00,17/11/2022,,0
+FP,"Normas e TÃ©cnicas de Auditoria PÃºblica","NTAP_(PGFPTP01","Turma Ãfrica e Timor",50,Qua,09:00:00,13:00:00,16/11/2022,,0
+FP,"Normas e TÃ©cnicas de Auditoria PÃºblica","NTAP_(PGFPTP01","Turma Ãfrica e Timor",50,Ter,09:00:00,13:00:00,15/11/2022,,0
+FP,"Normas e TÃ©cnicas de Auditoria PÃºblica","NTAP_(PGFPTP01","Turma Ãfrica e Timor",50,Seg,09:00:00,13:00:00,14/11/2022,,0
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,15/12/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,24/11/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,17/11/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,10/11/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,03/11/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,27/10/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,20/10/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,13/10/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,06/10/2022,AA3.28,44
+MES,"Sociologia do Desempenho Escolar",01047TP02,MES-OPT,40,Qui,20:30:00,22:30:00,29/09/2022,AA3.28,44
+MPRI,"EstÃ¡gio em Psicologia das RelaÃ§Ãµes Interculturais",01690S01,MPRI-B1,13,Ter,15:30:00,17:30:00,15/11/2022,AA2.24,30
+MPRI,"EstÃ¡gio em Psicologia das RelaÃ§Ãµes Interculturais",01690S01,MPRI-B1,13,Ter,15:30:00,17:30:00,11/10/2022,AA2.24,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,10/11/2022,AA3.40,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,03/11/2022,AA3.40,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,27/10/2022,AA3.40,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,20/10/2022,AA3.40,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,13/10/2022,AA3.40,30
+CT,"Responsabilidade Social e Voluntariado",02252TP02,CI-CT-02,27,Qui,13:00:00,15:00:00,06/10/2022,AA3.40,30
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,05/12/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,28/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,21/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,14/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,07/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,24/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,17/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,10/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,03/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,26/09/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,19/09/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+"LETI, LEI, LEI-PL, LIGE, LIGE-PL","IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o",L0782T03,"EI-A9, EI-A8, EI-A7, EI-A6, EI-A5, EI-A4, EI-A3, EI-A2, EI-A12, EI-A11, EI-A10, EI-A1",103,Seg,16:00:00,17:30:00,12/09/2022,,0
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,09/12/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,25/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,11/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,28/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,14/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+LP,"Psicologia Social",L5200PL05,PA4,36,Sex,09:30:00,11:00:00,30/09/2022,C4.05,30
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,07/12/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,30/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,23/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,16/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,09/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,02/11/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,26/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,19/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,12/10/2022,"AuditÃ³rio 0NE03 - MÃ¡rio Murteira",89
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,28/09/2022,"2,00E+06",50
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,21/09/2022,"2,00E+06",50
+CIESPP,"Sociologia do Trabalho",L5141TP01,CI-ESPP-1,52,Qua,18:00:00,21:00:00,14/09/2022,"AuditÃ³rio Silva Leal",60
+"CIISTA, ICCI","Internet das Coisas para Cidades Inteligentes",ICCIT01,CI-ISTA-Mest-1,38,Ter,19:30:00,21:00:00,27/09/2022,"1,00E+10",50
+"CIISTA, ICCI","Internet das Coisas para Cidades Inteligentes",ICCIT01,CI-ISTA-Mest-1,38,Ter,19:30:00,21:00:00,20/09/2022,"1,00E+10",50
+"CIISTA, ICCI","Internet das Coisas para Cidades Inteligentes",ICCIT01,CI-ISTA-Mest-1,38,Ter,19:30:00,20:30:00,04/10/2022,"1,00E+10",50
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,04/11/2022,"AuditÃ³rio Afonso de Barros",80
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,28/10/2022,"AuditÃ³rio Afonso de Barros",80
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,21/10/2022,"AuditÃ³rio Afonso de Barros",80
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,14/10/2022,"AuditÃ³rio Afonso de Barros",80
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,07/10/2022,,0
+MEInt,"DissertaÃ§Ã£o em Estudos Internacionais",02075S01,MEIB1,67,Sex,18:00:00,20:00:00,30/09/2022,"AuditÃ³rio Afonso de Barros",80
+METI,"DissertaÃ§Ã£o em Engenharia de TelecomunicaÃ§Ãµes e InformÃ¡tica (2020)",DETIS03,"METI-PL-B1, METI-B1",26,Qua,18:00:00,19:30:00,16/11/2022,,0
+METI,"DissertaÃ§Ã£o em Engenharia de TelecomunicaÃ§Ãµes e InformÃ¡tica (2020)",DETIS03,"METI-PL-B1, METI-B1",26,Qua,18:00:00,19:30:00,02/11/2022,,0
+CADIEAP,"Design Thinking e EstratÃ©gias de InovaÃ§Ã£o",DTEITP01,CADIEAP_2ÂªEdiÃ§Ã£o,24,Sex,09:30:00,13:30:00,03/02/2023,,0
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,12/12/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,05/12/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,28/11/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,14/11/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,07/11/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,31/10/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,24/10/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,17/10/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,10/10/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,03/10/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,26/09/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,19/09/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Seg,08:00:00,09:30:00,12/09/2022,AA2.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,14/12/2022,AA3.29,50
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,30/11/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,16/11/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,09/11/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,02/11/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,26/10/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,19/10/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,12/10/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,28/09/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,21/09/2022,C6.10,80
+CIIBS,"LideranÃ§a e GovernanÃ§a Organizacional",L5057TP01,CI-IBS-1,50,Qua,11:00:00,12:30:00,14/09/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,07/12/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,30/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,23/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,16/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,09/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,02/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,26/10/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,19/10/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,12/10/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,28/09/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,21/09/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Qua,14:30:00,16:00:00,14/09/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,06/12/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,29/11/2022,,0
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,22/11/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,15/11/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,08/11/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,25/10/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,18/10/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,11/10/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,04/10/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,27/09/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,20/09/2022,"AuditÃ³rio B2.04",192
+CIIBS,"Marketing Internacional",L1801TP02,CI-IBS-2,33,Ter,14:30:00,16:00:00,13/09/2022,"AuditÃ³rio B2.04",192
+MEAS,"Direito e RegulaÃ§Ã£o do Ambiente",02021TP02,MEAS-A1,40,Ter,18:00:00,20:00:00,29/11/2022,"AuditÃ³rio C1.04",60
+MEAS,"Direito e RegulaÃ§Ã£o do Ambiente",02021TP02,MEAS-A1,40,Ter,18:00:00,20:00:00,22/11/2022,"AuditÃ³rio C1.04",60
+MEAS,"Direito e RegulaÃ§Ã£o do Ambiente",02021TP02,MEAS-A1,40,Ter,18:00:00,20:00:00,15/11/2022,"AuditÃ³rio C1.04",60
+MEAS,"Direito e RegulaÃ§Ã£o do Ambiente",02021TP02,MEAS-A1,40,Ter,18:00:00,20:00:00,08/11/2022,"AuditÃ³rio C1.04",60
+MEAS,"Direito e RegulaÃ§Ã£o do Ambiente",02021TP02,MEAS-A1,40,Ter,18:00:00,20:00:00,25/10/2022,"AuditÃ³rio C1.04",60
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,12:30:00,14:00:00,13/12/2022,,0
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,15/12/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,24/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,17/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,10/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,03/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,27/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,20/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,13/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,06/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,29/09/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Qui,11:00:00,12:30:00,22/09/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,13/12/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,06/12/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,29/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,22/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,15/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,08/11/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,25/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,18/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,11/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,04/10/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,27/09/2022,"AuditÃ³rio 1",120
+"LE, LP","Psicologia das OrganizaÃ§Ãµes e do Trabalho",02399TP03,"PB1, EB3, EB2, EB1",41,Ter,11:00:00,12:30:00,20/09/2022,"AuditÃ³rio 1",120
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,19:30:00,21:30:00,02/12/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,15/10/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,17:30:00,19:30:00,21/10/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,19:30:00,21:30:00,28/10/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,17:30:00,19:30:00,18/11/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,17:30:00,19:30:00,11/11/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,03/12/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,19/11/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,12/11/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,08/10/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,01/10/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,09:00:00,11:00:00,17/09/2022,C5.05,30
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,Sex,19:30:00,21:30:00,25/11/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,11:00:00,13:00:00,03/12/2022,C5.07,68
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,11:00:00,13:00:00,26/11/2022,C5.02,46
+MMF,"Derivados e GestÃ£o de Risco",M2421TP01,MMFA1,25,SÃ¡b,11:00:00,13:00:00,15/10/2022,C5.02,46
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,09/12/2022,C5.09,56
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,02/12/2022,C5.09,56
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,25/11/2022,C5.09,56
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,18/11/2022,C5.09,56
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,11/11/2022,C5.09,56
+"CT, LCD, LCD-PL, LDSA, LMATD, LTDA, LTDE, LTDG, LTDIA, LTDSAU, LTDSEG","Pensamento CrÃ­tico",00677TP05,"CDA2, CT-CDA2",26,Sex,11:00:00,13:00:00,04/11/2022,C5.09,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,12/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,05/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,28/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,21/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,14/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,13:00:00,14:30:00,07/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,12/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,05/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,28/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,21/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,14/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Seg,14:30:00,16:00:00,07/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,14/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,07/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,30/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,23/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,16/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,13:00:00,14:30:00,09/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,14/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,07/12/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,30/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,23/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,16/11/2022,C6.07,56
+"LCD, LCD-PL","IntroduÃ§Ã£o A Modelos DinÃ¢micos",03602TP01,CDB1,37,Qua,14:30:00,16:00:00,09/11/2022,C6.07,56
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,20/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,13/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,06/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,29/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,22/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,14:30:00,16:00:00,15/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,20/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,13/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,06/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,29/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,22/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Qui,13:00:00,14:30:00,15/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,18/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,11/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,04/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,27/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,20/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,14:30:00,16:00:00,13/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,18/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,11/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,04/10/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,27/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,20/09/2022,D1.07,27
+"LCD, LCD-PL","ModelaÃ§Ã£o EstocÃ¡stica",03607TP01,CDC1,27,Ter,13:00:00,14:30:00,13/09/2022,D1.07,27
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Seg,09:30:00,12:30:00,12/12/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,15/12/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,24/11/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,17/11/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,10/11/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,03/11/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,27/10/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,20/10/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,13/10/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,06/10/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,29/09/2022,,0
+LPES,"MatemÃ¡tica (Dtda)",04298TP01,LPES-A1,0,Qui,09:30:00,12:30:00,22/09/2022,,0
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,13/12/2022,,0
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,06/12/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,29/11/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,22/11/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,15/11/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,08/11/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,25/10/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,18/10/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,11/10/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,04/10/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,27/09/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,20/09/2022,AA3.29,50
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Ter,09:30:00,11:00:00,13/09/2022,,0
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,14/12/2022,,0
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,07/12/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,30/11/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,23/11/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,16/11/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,09/11/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,02/11/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,26/10/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,19/10/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,12/10/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,28/09/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,21/09/2022,AA3.26,30
+"LE, LFC, LG, LGM, LGRH, LGIL","Contabilidade Financeira I",L0638PL21,GiA2,34,Qua,11:00:00,12:30:00,14/09/2022,,0
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,28/11/2022,,0
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,21/11/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,14/11/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,07/11/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,31/10/2022,,0
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,24/10/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,17/10/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,10/10/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,03/10/2022,AA3.28,44
+"MCCTI, GNM","DinÃ¢micas Sociais da Internet",01718TP02,MCCTI_A1,46,Seg,14:00:00,16:00:00,26/09/2022,AA3.28,44
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150TP08,LTDIA-A1,0,Seg,14:00:00,17:00:00,07/11/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150TP08,LTDIA-A1,0,Seg,14:00:00,17:00:00,31/10/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150TP08,LTDIA-A1,0,Seg,14:00:00,17:00:00,24/10/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150TP08,LTDIA-A1,0,Seg,14:00:00,17:00:00,17/10/2022,,0
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,14/12/2022,,0
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,07/12/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,30/11/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,23/11/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,16/11/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,09/11/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,02/11/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,26/10/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,19/10/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,12/10/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,28/09/2022,"AuditÃ³rio 4",250
+"LE, LFC, LG, LGM, LGIL","IntroduÃ§Ã£o Ã  GestÃ£o",L0520T06,"GILA2, GILA1, EA3, EA2, EA1",133,Qua,11:00:00,12:30:00,21/09/2022,"AuditÃ³rio 4",250
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Sex,09:30:00,12:30:00,07/10/2022,,0
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Qui,14:00:00,17:00:00,27/10/2022,,0
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Qui,14:00:00,17:00:00,20/10/2022,,0
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Qui,14:00:00,17:00:00,13/10/2022,,0
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Qui,14:00:00,17:00:00,29/09/2022,,0
+"LDSA, LMATD, LTDA, LTDG, LTDIA, LTDSAU, LTDSEG","Trabalho e Emprego na Sociedade Digital",04399T04,LTDIA-A1,0,Qui,14:00:00,17:00:00,22/09/2022,,0
+MEA,"DissertaÃ§Ã£o em Estudos Africanos",DEAS01,MEAB1,14,Ter,18:00:00,20:00:00,29/11/2022,C4.07,68
+MEA,"DissertaÃ§Ã£o em Estudos Africanos",DEAS01,MEAB1,14,Ter,18:00:00,20:00:00,15/11/2022,C4.07,68
+MEA,"DissertaÃ§Ã£o em Estudos Africanos",DEAS01,MEAB1,14,Ter,18:00:00,20:00:00,25/10/2022,C4.07,68
+MEA,"DissertaÃ§Ã£o em Estudos Africanos",DEAS01,MEAB1,14,Ter,18:00:00,20:00:00,11/10/2022,C4.07,68
+MEA,"DissertaÃ§Ã£o em Estudos Africanos",DEAS01,MEAB1,14,Ter,18:00:00,19:00:00,27/09/2022,C4.07,68
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,SÃ¡b,09:30:00,11:00:00,17/12/2022,,0
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,15/12/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,24/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,17/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,10/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,03/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,27/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,20/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,13/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,06/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,29/09/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Qui,09:30:00,11:00:00,22/09/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,13/12/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,06/12/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,29/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,22/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,15/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,08/11/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,25/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,18/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,11/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,04/10/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,27/09/2022,D1.06,28
+"LFC, LG","InformÃ¡tica de GestÃ£o",L0718TP02,GiA2,37,Ter,11:00:00,12:30:00,20/09/2022,D1.06,28
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,13/12/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,06/12/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,29/11/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,22/11/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,15/11/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,08/11/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,25/10/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,18/10/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,11/10/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,04/10/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,27/09/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,20/09/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Ter,08:00:00,09:30:00,13/09/2022,AA2.23,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,24/11/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,17/11/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,10/11/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,03/11/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,27/10/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,20/10/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,13/10/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,06/10/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,29/09/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,22/09/2022,AA2.29,50
+CIIBS,"Economia do Turismo",L6052TP01,CI-IBS-1,45,Qui,08:00:00,09:30:00,15/09/2022,AA2.29,50
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,15/11/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,08/11/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,25/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,18/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,11/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,04/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,27/09/2022,,0
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Ter,11:00:00,12:30:00,20/09/2022,,0
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,07/11/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,31/10/2022,,0
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,24/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,17/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,10/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,03/10/2022,C5.09,56
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,26/09/2022,,0
+LP,"HistÃ³ria da Psicologia",L5214TP01,"PB4, PB2",47,Seg,09:30:00,11:00:00,19/09/2022,,0
+MPCPCJR,"DissertaÃ§Ã£o em Psicologia ComunitÃ¡ria, ProteÃ§Ã£o de CrianÃ§as e Jovens em Risco",02819S01,MPCPCJRB1,16,Seg,15:00:00,17:00:00,14/11/2022,AA2.26,30
+MPCPCJR,"DissertaÃ§Ã£o em Psicologia ComunitÃ¡ria, ProteÃ§Ã£o de CrianÃ§as e Jovens em Risco",02819S01,MPCPCJRB1,16,Ter,15:00:00,17:00:00,27/09/2022,AA2.26,30
+MPCPCJR,"DissertaÃ§Ã£o em Psicologia ComunitÃ¡ria, ProteÃ§Ã£o de CrianÃ§as e Jovens em Risco",02819S01,MPCPCJRB1,16,Qui,13:00:00,15:00:00,15/12/2022,AA2.26,30
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,09/12/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,02/12/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,25/11/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,18/11/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,11/11/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,04/11/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,28/10/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,21/10/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,14/10/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,07/10/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,30/09/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,23/09/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Sex,08:00:00,09:30:00,16/09/2022,C3.01,54
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,24/11/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,17/11/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,10/11/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,03/11/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,27/10/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,20/10/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,13/10/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,06/10/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,29/09/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,22/09/2022,"2,00E+10",50
+"LFC, LG","Contabilidade de GestÃ£o II",L0644TP04,GiB2,31,Qui,09:30:00,11:00:00,15/09/2022,"2,00E+10",50
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,06/12/2022,,0
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,29/11/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,22/11/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,15/11/2022,,0
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,08/11/2022,,0
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,25/10/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,18/10/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,11/10/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,04/10/2022,C2.01,54
+CIESPP,"OpiniÃ£o PÃºblica e Sondagens",03426TP01,CI-ESPP-2,36,Ter,18:00:00,20:00:00,27/09/2022,C2.01,54
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,15:30:00,17:30:00,30/09/2022,,0
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,09/12/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,02/12/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,25/11/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,18/11/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,11/11/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,04/11/2022,"AuditÃ³rio C1.03",70
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,21/10/2022,,0
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,14/10/2022,,0
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,07/10/2022,,0
+"PMGIDS, MPRI","EstereÃ³tipos, Preconceito e DiscriminaÃ§Ã£o: Temas AvanÃ§ados",01687TP02,"MPRI-A1, MGlobalMinds-A1",42,Sex,13:00:00,15:00:00,30/09/2022,,0
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,11:00:00,12:30:00,10/12/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,11:00:00,12:30:00,19/11/2022,,0
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,11:00:00,12:30:00,22/10/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,11:00:00,12:30:00,24/09/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,09:30:00,11:00:00,10/12/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,09:30:00,11:00:00,19/11/2022,,0
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,09:30:00,11:00:00,22/10/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,09:30:00,11:00:00,24/09/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,14:00:00,15:30:00,10/12/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,14:00:00,15:30:00,19/11/2022,,0
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,14:00:00,15:30:00,22/10/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,14:00:00,15:30:00,24/09/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,12:30:00,14:00:00,10/12/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,12:30:00,14:00:00,19/11/2022,,0
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,12:30:00,14:00:00,22/10/2022,C4.01,52
+MGSI,"SeminÃ¡rio em GestÃ£o de Sistemas de InformaÃ§Ã£o 2 (2018)",SGSI2S01,MGSIB1,42,SÃ¡b,12:30:00,14:00:00,24/09/2022,C4.01,52
+CADIEAP,ConferÃªncia,ConfS01,CADIEAP_2ÂªEdiÃ§Ã£o,24,Sex,10:00:00,13:00:00,28/10/2022,C3.02,38
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,20:00:00,22:00:00,25/10/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,20:00:00,22:00:00,18/10/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,20:00:00,22:00:00,11/10/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,13/12/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,06/12/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,29/11/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,22/11/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,15/11/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,08/11/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,25/10/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,18/10/2022,,0
+PIUDHIST,"ImpÃ©rios, Colonialismo e PÃ³s-Colonialismo I",ICP_IS01,DHMCMG1,0,Ter,18:00:00,20:00:00,11/10/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,08:00:00,09:30:00,19/10/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,08:00:00,09:30:00,12/10/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,23/11/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,16/11/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,09/11/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,19/10/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,12/10/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,28/09/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,21/09/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,11:00:00,12:30:00,14/09/2022,"AuditÃ³rio C1.04",60
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,08:00:00,09:30:00,21/09/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,08:00:00,09:30:00,14/09/2022,"AuditÃ³rio C1.04",60
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,23/11/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,16/11/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,09/11/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,19/10/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,12/10/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,28/09/2022,,0
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,21/09/2022,"1,00E+03",50
+"TourDC, MGHT","Grandes Eventos e GestÃ£o de Eventos",03441TP01,TourDC-B1,36,Qua,09:30:00,11:00:00,14/09/2022,"AuditÃ³rio C1.04",60
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,05/12/2022,D1.04,23
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,28/11/2022,AA3.24,30
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,21/11/2022,AA3.24,30
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,14/11/2022,AA3.24,30
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,07/11/2022,AA3.24,30
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:30:00,31/10/2022,D1.04,23
+CT,"FinanÃ§as Pessoais I",03177TP01,CI-CT-01,25,Seg,13:00:00,14:00:00,24/10/2022,AA3.24,30
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150T04,LTDIA-A1,0,Seg,14:00:00,17:00:00,10/10/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150T04,LTDIA-A1,0,Seg,14:00:00,17:00:00,03/10/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150T04,LTDIA-A1,0,Seg,14:00:00,17:00:00,26/09/2022,,0
+"LDSA, LMATD, LPES, LTDA, LTDE, LTDG, LTDIA","Fundamentos de ProgramaÃ§Ã£o",04150T04,LTDIA-A1,0,Seg,14:00:00,17:00:00,19/09/2022,,0
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,07/12/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,30/11/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,23/11/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,16/11/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,09/11/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,02/11/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,26/10/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,19/10/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,12/10/2022,C3.01,54
+"MCP, MCTRL, MES, MEA, MPP, MS","MÃ©todos de Pesquisa em CiÃªncias Sociais",00553TP02,MESA1,35,Qua,18:00:00,20:00:00,28/09/2022,C3.01,54
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,21:00:00,22:00:00,16/12/2022,AA3.40,30
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,18:00:00,21:00:00,16/12/2022,AA3.40,30
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,18:00:00,21:00:00,02/12/2022,AA3.40,30
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,18:00:00,21:00:00,18/11/2022,AA3.40,30
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,18:00:00,21:00:00,04/11/2022,AA3.40,30
+"DHESD, DHMC","SeminÃ¡rio de HistÃ³ria I (2020)",03960S01,"DHMC-A1, DHESDA1",12,Sex,18:00:00,21:00:00,21/10/2022,AA3.40,30
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,09/12/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,02/12/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,25/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,18/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,11/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,04/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,28/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,21/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,14/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,07/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,30/09/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,23/09/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Sex,08:00:00,09:30:00,16/09/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,24/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,17/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,10/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,03/11/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,27/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,20/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,13/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,06/10/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,29/09/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,22/09/2022,AA2.25,34
+"LFC, LG","EstatÃ­stica I",L0119TP06,GiB1,28,Qui,09:30:00,11:00:00,15/09/2022,AA2.25,34
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qui,17:30:00,19:00:00,06/10/2022,,0
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qui,16:00:00,17:30:00,06/10/2022,,0
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,21/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,14/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,07/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,30/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,23/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,13:00:00,14:30:00,16/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,13:00:00,14:30:00,19/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,13:00:00,14:30:00,12/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,13:00:00,14:30:00,28/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,13:00:00,14:30:00,21/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,13:00:00,14:30:00,14/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,21/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,14/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,07/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,30/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,23/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Sex,14:30:00,16:00:00,16/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,14:30:00,16:00:00,19/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,14:30:00,16:00:00,12/10/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,14:30:00,16:00:00,28/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,14:30:00,16:00:00,21/09/2022,C6.02,40
+"LCD, LCD-PL","EstatÃ­stica Computacional",03594TP03,CDB2,27,Qua,14:30:00,16:00:00,14/09/2022,C6.02,40
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,20:00:00,21:00:00,17/10/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,18:00:00,19:30:00,07/11/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,18:00:00,19:30:00,31/10/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,18:00:00,19:30:00,24/10/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,19:30:00,21:00:00,07/11/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,19:30:00,21:00:00,31/10/2022,"1,00E+05",52
+MCD,"Sistemas de Controlo de GestÃ£o Aplicados",03679T01,MCDB1,33,Seg,19:30:00,21:00:00,24/10/2022,"1,00E+05",52
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,15/12/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,24/11/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,17/11/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,10/11/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,03/11/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,27/10/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,20/10/2022,C4.05,30
+DEInt,"SeminÃ¡rio em Estudos Internacionais",04183S01,DEIA1,23,Qui,18:00:00,20:00:00,13/10/2022,C4.05,30
+"CT, LCP, LS, LS-PL","IntroduÃ§Ã£o ao Excel",01800PL02,"S-PL-A2, CT-ESPP-07, CT-ESPP-PL-02, CI-CT-05",30,Sex,19:30:00,22:30:00,16/12/2022,0S01,41
+"CT, LCP, LS, LS-PL","IntroduÃ§Ã£o ao Excel",01800PL02,"S-PL-A2, CT-ESPP-07, CT-ESPP-PL-02, CI-CT-05",30,Sex,19:30:00,22:30:00,09/12/2022,0S01,41
+"CT, LCP, LS, LS-PL","IntroduÃ§Ã£o ao Excel",01800PL02,"S-PL-A2, CT-ESPP-07, CT-ESPP-PL-02, CI-CT-05",30,Sex,19:30:00,22:30:00,02/12/2022,0S01,41
+"CT, LCP, LS, LS-PL","IntroduÃ§Ã£o ao Excel",01800PL02,"S-PL-A2, CT-ESPP-07, CT-ESPP-PL-02, CI-CT-05",30,Sex,19:30:00,22:30:00,25/11/2022,0S01,41
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,09/12/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,02/12/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,25/11/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,18/11/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,11/11/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,04/11/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,28/10/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,21/10/2022,C4.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,14/10/2022,C5.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,07/10/2022,C5.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,30/09/2022,C5.07,68
+MSIAD,"Desenho e Desenvolvimento de AplicaÃ§Ãµes de Business Intelligence",03756T01,MSIAD-A1,51,Sex,18:00:00,19:30:00,23/09/2022,C5.07,68
+CIECSH,"DefiniÃ§Ã£o, SinalizaÃ§Ã£o e AvaliaÃ§Ã£o de CrianÃ§as em SituaÃ§Ã£o de Mau Trato e NegligÃªncia",M8623PL02,"CI-ECSH 1",38,Ter,15:30:00,17:30:00,13/12/2022,AA2.23,50
+CIECSH,"DefiniÃ§Ã£o, SinalizaÃ§Ã£o e AvaliaÃ§Ã£o de CrianÃ§as em SituaÃ§Ã£o de Mau Trato e NegligÃªncia",M8623PL02,"CI-ECSH 1",38,Ter,15:30:00,17:30:00,06/12/2022,AA2.23,50
+CIECSH,"DefiniÃ§Ã£o, SinalizaÃ§Ã£o e AvaliaÃ§Ã£o de CrianÃ§as em SituaÃ§Ã£o de Mau Trato e NegligÃªncia",M8623PL02,"CI-ECSH 1",38,Ter,13:30:00,15:30:00,13/12/2022,AA2.23,50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Sex,19:30:00,21:00:00,09/12/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Sex,19:30:00,21:00:00,02/12/2022,,0
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Sex,18:00:00,19:30:00,09/12/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Sex,18:00:00,19:30:00,02/12/2022,,0
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,18:00:00,19:30:00,15/12/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,18:00:00,19:30:00,24/11/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,18:00:00,19:30:00,17/11/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,18:00:00,19:30:00,10/11/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,19:30:00,21:00:00,15/12/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,19:30:00,21:00:00,24/11/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,19:30:00,21:00:00,17/11/2022,"1,00E+06",50
+CIISTA,"AplicaÃ§Ãµes de Sistemas Integrados de Apoio Ã  DecisÃ£o",04192PL03,CI-ISTA-Mest-1,28,Qui,19:30:00,21:00:00,10/11/2022,"1,00E+06",50
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,15:00:00,16:30:00,24/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,13:30:00,15:00:00,24/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,11:00:00,12:30:00,24/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,11:00:00,12:30:00,17/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,11:00:00,12:30:00,10/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,11:00:00,12:30:00,03/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,09:30:00,11:00:00,24/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,09:30:00,11:00:00,17/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,09:30:00,11:00:00,10/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qui,09:30:00,11:00:00,03/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,11:00:00,12:30:00,30/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,11:00:00,12:30:00,23/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,11:00:00,12:30:00,16/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,11:00:00,12:30:00,09/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,11:00:00,12:30:00,02/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,09:30:00,11:00:00,30/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,09:30:00,11:00:00,23/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,09:30:00,11:00:00,16/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,09:30:00,11:00:00,09/11/2022,AA3.23,52
+MGSS,"GestÃ£o de Recursos Humanos (2Âºciclo)",00909TP01,MGSSA1,39,Qua,09:30:00,11:00:00,02/11/2022,AA3.23,52
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,10/11/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,03/11/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,27/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,20/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,13/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,06/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,29/09/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qui,18:00:00,19:30:00,22/09/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,16/11/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,09/11/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,02/11/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,26/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,19/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,12/10/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,28/09/2022,D1.05,30
+PGIAO,"ModelaÃ§Ã£o de Sistemas de InformaÃ§Ã£o",00104TP01,"PG IAO",27,Qua,18:00:00,19:30:00,21/09/2022,D1.05,30
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,13:00:00,14:30:00,11/10/2022,"1,00E+06",50
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,13:00:00,14:30:00,04/10/2022,"1,00E+06",50
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,13:00:00,14:30:00,27/09/2022,"1,00E+06",50
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,13:00:00,14:30:00,20/09/2022,"2,00E+10",50
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,14:30:00,16:00:00,11/10/2022,D1.14,27
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,14:30:00,16:00:00,04/10/2022,D1.14,27
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,14:30:00,16:00:00,27/09/2022,D1.14,27
+CIISTA,"AnimaÃ§Ã£o e Controlo de Personagens Virtuais",ACPVT01,CI-ISTA-Mest-1,8,Ter,14:30:00,16:00:00,20/09/2022,"2,00E+10",50
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,11/11/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,04/11/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,28/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,21/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,14/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,07/10/2022,,0
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,30/09/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Sex,13:00:00,14:30:00,23/09/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,10/11/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,03/11/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,27/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,20/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,13/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,06/10/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,29/09/2022,D1.01,35
+CIISTA,"IntroduÃ§Ã£o Ã  CiÃªncia de Dados",03583TP03,CI-ISTA-LIC-1,40,Qui,13:00:00,14:30:00,22/09/2022,D1.01,35
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,07/12/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,30/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,23/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,16/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,09/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,02/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,26/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,19/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,12/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,28/09/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,21/09/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Qua,18:00:00,19:30:00,14/09/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,06/12/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,29/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,22/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,15/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,08/11/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,25/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,18/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,11/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,04/10/2022,"1,00E+06",50
+"LIGE, LIGE-PL","Marketing para as Tecnologias",01769PL03,"IGE-PL-C2, IGE-PL-C1",21,Ter,18:00:00,19:30:00,27/09/2022,"1,00E+06",50
