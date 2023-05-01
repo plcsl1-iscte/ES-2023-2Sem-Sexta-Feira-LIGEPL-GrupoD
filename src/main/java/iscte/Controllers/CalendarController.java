@@ -176,7 +176,7 @@ public class CalendarController {
             Pair<Horario, Horario> sh = Pair.of(horario1, horario2);
             horariosSobrepostos.add(sh);
           }
-        }
+        } 
       }
     }
     System.out.println(
