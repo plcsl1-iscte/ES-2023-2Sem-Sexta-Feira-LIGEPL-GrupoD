@@ -38,12 +38,13 @@ public class HorarioReader {
   }
 
   public static String checkStringType(String input) {
-    File directory = new File(input);
 
     if (input == null || input.equals("")) {
-      System.out.println("Is Null!");
-      return "null";
-    }
+        //System.out.println("Is Null!");
+        return "null";
+      }
+
+    File directory = new File(input);
 
     if (directory.isDirectory()) {
       return "directory";
@@ -68,11 +69,10 @@ public class HorarioReader {
     List<Horario> horarios = new ArrayList<>();
 
     try {
-      System.out.println(path);
+      //System.out.println(path);
       BufferedReader reader = null;
       String stringType = checkStringType(path);
       if (stringType.equals("webcal")) {
-        System.out.println("IT IS A WEBCAL!");
         String httpUrl = path.replaceFirst("webcal://", "https://");
         URL url = new URL(httpUrl);
         URLConnection connection = url.openConnection();
@@ -103,6 +103,7 @@ public class HorarioReader {
                 String[] parts = line.split(":", 2);
                 if (parts.length == 2) {
                   descriptionMap.put(parts[0].trim(), parts[1].trim());
+                  //System.out.println(parts[0].trim() + parts[1].trim());
                 }
               }
               if (
@@ -118,7 +119,7 @@ public class HorarioReader {
                 }
 
                 if (descriptionMap.containsKey("Execution course")) {
-                  horario.setCurso(descriptionMap.get("Execution course"));
+                  horario.setCurso(descriptionMap.get("Curso"));
                 }
 
                 if (descriptionMap.containsKey("Turno")) {
@@ -167,10 +168,10 @@ public class HorarioReader {
           }
         }
       } else if (stringType.equals("null")) {
-        System.out.println("Is Null! Returning empty list..");
+        //System.out.println("Is Null! Returning empty list..");
         return horarios;
       } else {
-        System.out.println("IT IS A DIRECTORY!");
+        //System.out.println("IT IS A DIRECTORY!");
         CharsetDetector detector = new CharsetDetector();
         byte[] fileData = Files.readAllBytes(Paths.get(path));
         detector.setText(fileData);
@@ -182,7 +183,7 @@ public class HorarioReader {
               while ((line = br.readLine()) != null) {
                   String[] tokens = line.split(",");
                   if (tokens.length != 11) {
-                      System.err.println("Invalid input line: " + line);
+                      //System.err.println("Invalid input line: " + line);
                       continue;
                   }
                   Horario horario = new Horario();
@@ -205,7 +206,7 @@ public class HorarioReader {
               List<Horario> jsonHorarios = gson.fromJson(br, type);
               horarios.addAll(jsonHorarios);
           } else {
-              System.err.println("Unsupported file type");
+              //System.err.println("Unsupported file type");
           }
       } catch (IOException e) {
           e.printStackTrace();
