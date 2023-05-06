@@ -1,6 +1,10 @@
-iscte/Controllers/HorarioReader.class
-iscte/timetable/management/ConversorHorario.class
-iscte/timetable/models/Horario.class
-iscte/Application.class
-iscte/Controllers/HorarioController.class
-iscte/timetable/management/Horario.class
+iscte\Controllers\overbooking.class
+iscte\timetable\management\ConversorHorario.class
+iscte\timetable\management\Horario.class
+iscte\Controllers\HorarioReader.class
+iscte\Controllers\HorarioController.class
+iscte\Controllers\HorarioWriter.class
+iscte\Controllers\CalendarController.class
+iscte\timetable\models\Horario.class
+iscte\Application.class
+iscte\Controllers\HorarioReader$1.class

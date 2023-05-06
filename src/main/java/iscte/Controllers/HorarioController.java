@@ -13,7 +13,7 @@ public class HorarioController {
     private final String REPO = "src/main/java/iscte/timetable/files/";
 
     @GetMapping("/horario")
-    public String horario(Model model) {
+    public String horario(Model model) throws Exception {
         String jsonFilePath = REPO + "horario-exemplo.csv";
         HorarioReader reader = new HorarioReader(jsonFilePath);
         List<Horario> horarios = reader.read();
