@@ -33,6 +33,9 @@ public class CalendarController {
   private List<Horario> filteredHorarios = new ArrayList<Horario>();
   private Set<Pair<Horario, Horario>> horariosSobrepostos = new HashSet<>();
   private ArrayList<Horario> horariosSobrelotacao = new ArrayList<Horario>();
+  private List<Horario> horariosToDisplay = new ArrayList<Horario>();
+  private int overlappingPageNumber = 0;
+  private int overbookedPageNumber = 0;
 
   @GetMapping("/")
   public String displayCalendar(Model model, String filePath) throws Exception {
@@ -45,17 +48,17 @@ public class CalendarController {
       for (Horario horario : horarios) {
         uniqueUCs.add(horario.getUnidadeCurricular());
       }
-      //for (String s : uniqueUCs) System.out.println("UC: " + s);
+
+      if (filteredHorarios.size() > 0) {
+        horariosToDisplay = filteredHorarios;
+      } else {
+        horariosToDisplay = horarios;
+      }
 
       checkForOverlappingLessons(model);
       checkOverbookedEvents(model);
 
-      if (filteredHorarios.size() > 0) {
-        model.addAttribute("horarios", filteredHorarios);
-      } else {
-        model.addAttribute("horarios", horarios);
-      }
-
+      model.addAttribute("horarios", horariosToDisplay);
       model.addAttribute("ucs", uniqueUCs);
     }
     return "calendar";
@@ -148,35 +151,19 @@ public class CalendarController {
     }
   }
 
-  private void addHorario(Horario newhorario) {
-    horarios.add(newhorario);
-  }
-
-  private void removeHorario(Horario rmHorario) {
-    for (Horario h : horarios) {
-      if (h.toString().equals(rmHorario.toString())) {
-        horarios.remove(rmHorario);
-      }
-    }
-  }
-
   private void checkForOverlappingLessons(Model model) {
     horariosSobrepostos.clear();
-    List<Horario> checkingOverlap = horarios;
-    if (filteredHorarios.size() > 0) checkingOverlap = filteredHorarios;
+    List<Horario> checkingOverlap = horariosToDisplay;
     for (int i = 0; i < checkingOverlap.size(); i++) {
       for (int j = i + 1; j < checkingOverlap.size(); j++) {
         Horario horario1 = checkingOverlap.get(i);
         Horario horario2 = checkingOverlap.get(j);
         if (horario1.getDataAula().equals(horario2.getDataAula())) {
           if (checkOverlap(horario1, horario2)) {
-            System.out.println("Aulas sobrepostas: ");
-            System.out.println(horario1.toString());
-            System.out.println(horario2.toString());
             Pair<Horario, Horario> sh = Pair.of(horario1, horario2);
             horariosSobrepostos.add(sh);
           }
-        } 
+        }
       }
     }
     System.out.println(
@@ -232,13 +219,24 @@ public class CalendarController {
 
       messages.add(message.toString());
     }
-    model.addAttribute("overlappingLessonsMessages", messages);
+    List<String> paginatedMessages = paginateMessages(
+      messages,
+      overlappingPageNumber
+    );
+    model.addAttribute("overlappingLessonsMessages", paginatedMessages);
+    model.addAttribute(
+      "disableOverlappingPrevPage",
+      overlappingPageNumber == 0
+    );
+    model.addAttribute(
+      "disableOverlappingNextPage",
+      paginatedMessages.size() < 10
+    );
   }
 
   private void checkOverbookedEvents(Model model) {
     horariosSobrelotacao.clear();
-    List<Horario> checkingOverbook = horarios;
-    if (filteredHorarios.size() > 0) checkingOverbook = filteredHorarios;
+    List<Horario> checkingOverbook = horariosToDisplay;
     for (Horario h : checkingOverbook) {
       boolean areParseableToIntegers = true;
 
@@ -252,13 +250,10 @@ public class CalendarController {
       } catch (NumberFormatException e) {
         areParseableToIntegers = false;
       }
-
-      if (!areParseableToIntegers) {
-        System.out.println(
-          "One or both of the strings are not parseable to integers"
-        );
-      }
     }
+    System.out.println(
+      "Existem " + horariosSobrelotacao.size() + " horarios sobrepostos."
+    );
     displayOverbookedLessonsMessage(model);
   }
 
@@ -282,6 +277,66 @@ public class CalendarController {
 
       messages.add(message.toString());
     }
-    model.addAttribute("overbookedLessonsMessages", messages);
+    List<String> paginatedMessages = paginateMessages(
+      messages,
+      overbookedPageNumber
+    );
+    model.addAttribute("overbookedLessonsMessages", paginatedMessages);
+    model.addAttribute("disableOverbookedPrevPage", overbookedPageNumber == 0);
+    model.addAttribute(
+      "disableOverbookedNextPage",
+      paginatedMessages.size() < 10
+    );
+  }
+
+  private List<String> paginateMessages(List<String> messages, int pageNumber) {
+    int pageSize = 10;
+    int fromIndex = pageNumber * pageSize;
+    int toIndex = Math.min(fromIndex + pageSize, messages.size());
+    return messages.subList(fromIndex, toIndex);
+  }
+
+  @PostMapping("/overlappingPrev")
+  public String handleOverlappingPrev(Model model) throws Exception {
+    if (overlappingPageNumber > 0) {
+      overlappingPageNumber--;
+    }
+    return displayCalendar(model, currentUrlOrPath);
+  }
+
+  @PostMapping("/overlappingNext")
+  public String handleOverlappingNext(
+    Model model,
+    @RequestParam(
+      "overlappingLessonsMessages"
+    ) List<String> overlappingLessonsMessages
+  ) throws Exception {
+    int totalPages = (int) Math.ceil(overlappingLessonsMessages.size() / 10.0);
+    if (overlappingPageNumber < totalPages - 1) {
+      overlappingPageNumber++;
+    }
+    return displayCalendar(model, currentUrlOrPath);
+  }
+
+  @PostMapping("/overbookedPrev")
+  public String handleOverbookedPrev(Model model) throws Exception {
+    if (overbookedPageNumber > 0) {
+      overbookedPageNumber--;
+    }
+    return displayCalendar(model, currentUrlOrPath);
+  }
+
+  @PostMapping("/overbookedNext")
+  public String handleOverbookedNext(
+    Model model,
+    @RequestParam(
+      "overbookedLessonsMessages"
+    ) List<String> overbookedLessonsMessages
+  ) throws Exception {
+    int totalPages = (int) Math.ceil(overbookedLessonsMessages.size() / 10.0);
+    if (overbookedPageNumber < totalPages - 1) {
+      overbookedPageNumber++;
+    }
+    return displayCalendar(model, currentUrlOrPath);
   }
 }

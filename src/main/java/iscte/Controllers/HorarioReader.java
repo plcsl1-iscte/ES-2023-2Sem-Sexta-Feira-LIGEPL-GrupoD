@@ -41,7 +41,6 @@ public class HorarioReader {
     File directory = new File(input);
 
     if (input == null || input.equals("")) {
-      System.out.println("Is Null!");
       return "null";
     }
 
@@ -68,11 +67,9 @@ public class HorarioReader {
     List<Horario> horarios = new ArrayList<>();
 
     try {
-      System.out.println(path);
       BufferedReader reader = null;
       String stringType = checkStringType(path);
       if (stringType.equals("webcal")) {
-        System.out.println("IT IS A WEBCAL!");
         String httpUrl = path.replaceFirst("webcal://", "https://");
         URL url = new URL(httpUrl);
         URLConnection connection = url.openConnection();
@@ -167,10 +164,8 @@ public class HorarioReader {
           }
         }
       } else if (stringType.equals("null")) {
-        System.out.println("Is Null! Returning empty list..");
         return horarios;
       } else {
-        System.out.println("IT IS A DIRECTORY!");
         CharsetDetector detector = new CharsetDetector();
         byte[] fileData = Files.readAllBytes(Paths.get(path));
         detector.setText(fileData);
@@ -182,7 +177,6 @@ public class HorarioReader {
               while ((line = br.readLine()) != null) {
                   String[] tokens = line.split(",");
                   if (tokens.length != 11) {
-                      System.err.println("Invalid input line: " + line);
                       continue;
                   }
                   Horario horario = new Horario();
@@ -204,8 +198,6 @@ public class HorarioReader {
               Type type = new TypeToken<List<Horario>>() {}.getType();
               List<Horario> jsonHorarios = gson.fromJson(br, type);
               horarios.addAll(jsonHorarios);
-          } else {
-              System.err.println("Unsupported file type");
           }
       } catch (IOException e) {
           e.printStackTrace();
