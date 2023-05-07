@@ -1,18 +1,25 @@
-package iscte.Controllers;
+package iscte.utils;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.List;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVWriter;
+import com.opencsv.ICSVWriter;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import iscte.timetable.models.Horario;
+import iscte.entities.Horario;
+
+import static java.lang.System.*;
 
 public class HorarioWriter {
+
+    private HorarioWriter() {
+
+    }
 
     private static final String[] CSV_HEADER = {
             "curso", "unidadeCurricular", "turno", "turma", "inscritosNoTurno",
@@ -25,10 +32,7 @@ public class HorarioWriter {
     }
 
     public static String listToCsv(List<Horario> horarios) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
-        System.out.println("Size of horarios: " + horarios.size());
-
-        //remover o header
-        horarios.remove(0);
+        out.println("Size of horarios: " + horarios.size());
 
         StringWriter stringWriter = new StringWriter();
 
@@ -40,8 +44,8 @@ public class HorarioWriter {
 
             StatefulBeanToCsv<Horario> beanToCsv = new StatefulBeanToCsvBuilder<Horario>(stringWriter)
                     .withMappingStrategy(mappingStrategy)
-                    .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
-                    .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
+                    .withQuotechar(ICSVWriter.NO_QUOTE_CHARACTER)
+                    .withSeparator(ICSVWriter.DEFAULT_SEPARATOR)
                     .build();
 
             beanToCsv.write(horarios);
