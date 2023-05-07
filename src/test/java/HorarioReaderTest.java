@@ -16,7 +16,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 
@@ -41,6 +41,10 @@ class HorarioReaderTest {
 
         HorarioWriter writer2 = new HorarioWriter();
         String download2 = writer2.listToCsv(horarios);
+
+        assertNotNull(download1, "JSON output should not be null");
+        assertNotNull(download2, "CSV output should not be null");
+
     }
 
     @Test
@@ -55,7 +59,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(file));
+        String viewName = controller.displayCalendar(model, String.valueOf(file), String.valueOf(file), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();
@@ -76,7 +80,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(file2));
+        String viewName = controller.displayCalendar(model, String.valueOf(file2), String.valueOf(file2), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();
@@ -97,7 +101,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(webcal));
+        String viewName = controller.displayCalendar(model, String.valueOf(webcal), String.valueOf(webcal), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();

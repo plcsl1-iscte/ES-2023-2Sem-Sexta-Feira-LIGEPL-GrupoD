@@ -17,11 +17,14 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.time.LocalTime;
@@ -33,14 +36,15 @@ import java.util.stream.Collectors;
 @Setter
 @Controller
 public class CalendarController {
+    private static final String CURRENT_PATH_ATTRIBUTE = "currentPath";
     static final Logger LOGGER = (Logger) LoggerFactory.getLogger(CalendarController.class);
     private final List<Horario> filteredHorarios = new ArrayList<>();
     private final ArrayList<Horario> horariosSobrelotacao = new ArrayList<>();
     private List<Horario> horarios = new ArrayList<>();
     private Set<Pair<Horario, Horario>> horariosSobrepostos = new HashSet<>();
     private List<Horario> horariosToDisplay = new ArrayList<>();
-    private int overlappingPageNumber = 1;
-    private int overbookedPageNumber = 1;
+    private int overlappingPageNumber = 0;
+    private int overbookedPageNumber = 0;
     private String currentUrlOrPath;
 
     /**
@@ -52,26 +56,42 @@ public class CalendarController {
      * @throws Exception if an error occurs while reading or processing the course schedules
      */
     @GetMapping("/calendar")
-    public String displayCalendar(Model model, @RequestParam(name = "file", required = false) String filePath) throws Exception {
-        if (model != null && filePath != null) {
-            HorarioReader reader = new HorarioReader(filePath);
+    public String displayCalendar(Model model,
+                                  @RequestParam(name = "file", required = false) String filePath,
+                                  @RequestParam(name = "currentPath", required = false) String currentPath,
+                                  @RequestParam(value = "overlappingPage", defaultValue = "0") int overlappingPage,
+                                  @RequestParam(value = "overbookedPage", defaultValue = "0") int overbookedPage
+    ) throws Exception {
+        if (model != null) {
 
-            horarios = reader.read();
-
-            Set<String> uniqueUCs = horarios.stream().map(Horario::getUnidadeCurricular).collect(Collectors.toSet());
-
-            if (filteredHorarios.size() > 0) {
-                horariosToDisplay = filteredHorarios;
-            } else {
-                horariosToDisplay = horarios;
+            if (currentPath != null) {
+                currentUrlOrPath = currentPath;
             }
 
-            checkForOverlappingLessons(model);
-            checkOverbookedEvents(model);
+            if (currentUrlOrPath != null) {
+                HorarioReader reader = new HorarioReader(currentUrlOrPath);
 
-            model.addAttribute("horarios", horariosToDisplay);
-            model.addAttribute("ucs", uniqueUCs);
+                horarios = reader.read();
 
+                Set<String> uniqueUCs = horarios.stream().map(Horario::getUnidadeCurricular).collect(Collectors.toSet());
+
+                if (filteredHorarios.size() > 0) {
+                    horariosToDisplay = filteredHorarios;
+                } else {
+                    horariosToDisplay = horarios;
+                }
+                overlappingPageNumber = overlappingPage;
+
+                overbookedPageNumber = overbookedPage;
+
+                checkForOverlappingLessons(model);
+                checkOverbookedEvents(model);
+
+                model.addAttribute("horarios", horariosToDisplay);
+                model.addAttribute("ucs", uniqueUCs);
+                if (currentPath != null)
+                    model.addAttribute(CURRENT_PATH_ATTRIBUTE, URLEncoder.encode(currentPath, StandardCharsets.UTF_8));
+            }
 
         }
         return "calendar";
@@ -84,14 +104,19 @@ public class CalendarController {
      * @param redirectAttributes the redirect attributes used to pass data to the next request
      * @param model              the Spring model used to pass data to the view
      * @return the name of the calendar view template
-     * @throws Exception if an error occurs while reading or processing the course schedules
      */
     @PostMapping("/handleFileUpload")
-    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) throws Exception {
+    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+        filteredHorarios.clear();
         String path = request.getParameter("path");
-        currentUrlOrPath = path;
-        return displayCalendar(model, currentUrlOrPath);
+        if (path != null)
+            currentUrlOrPath = path;
+        redirectAttributes.addAttribute(CURRENT_PATH_ATTRIBUTE, currentUrlOrPath);
+        redirectAttributes.addAttribute("overlappingPage", overlappingPageNumber);
+        redirectAttributes.addAttribute("overbookedPage", overbookedPageNumber);
+        return "redirect:/calendar";
     }
+
 
     /**
      * Filters the course schedules to display in the calendar view based on the selected courses.
@@ -103,10 +128,7 @@ public class CalendarController {
      */
     @PostMapping("/selectUCs")
     public String processSelectedUCs(@RequestParam("ucs") List<String> selectedUCs, Model model) throws Exception {
-        // Print the selected UCs to the console
-
         filteredHorarios.clear();
-
         for (Horario h : horarios) {
             for (String uc : selectedUCs) {
                 if (h.getUnidadeCurricular().equals(uc)) {
@@ -114,8 +136,7 @@ public class CalendarController {
                 }
             }
         }
-
-        return displayCalendar(model, currentUrlOrPath);
+        return displayCalendar(model, currentUrlOrPath, currentUrlOrPath, overlappingPageNumber, overbookedPageNumber);
     }
 
     /**
@@ -126,11 +147,17 @@ public class CalendarController {
      * @throws Exception
      */
     @PostMapping("/handleURLUpload")
-    public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) throws Exception {
-        String url = request.getParameter("CalendarURL"); // Change this line
-        currentUrlOrPath = url;
-        return displayCalendar(model, currentUrlOrPath);
+    public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+        filteredHorarios.clear();
+        String url = request.getParameter("CalendarURL");
+        if (url != null)
+            currentUrlOrPath = url;
+        redirectAttributes.addAttribute(CURRENT_PATH_ATTRIBUTE, currentUrlOrPath);
+        redirectAttributes.addAttribute("overlappingPage", overlappingPageNumber);
+        redirectAttributes.addAttribute("overbookedPage", overbookedPageNumber);
+        return "redirect:/calendar";
     }
+
 
     /**
      * Handles the URL of the course schedule input file and displays the calendar view.
@@ -197,7 +224,7 @@ public class CalendarController {
             }
             return overlaps.stream();
         }).collect(Collectors.toSet());
-        //displayOverlappingLessonsMessage(model);
+        displayOverlappingLessonsMessage(model);
     }
 
     /**
@@ -220,7 +247,7 @@ public class CalendarController {
 
         Duration overlapDuration = Duration.between(latestStartTime, earliestEndTime);
 
-        return overlapDuration.compareTo(Duration.ZERO) > 0 && overlapDuration.compareTo(duration1) <= 0 && overlapDuration.compareTo(duration2) <= 0;
+        return overlapDuration.compareTo(Duration.ZERO) > 0 && overlapDuration.compareTo(duration1) < 0 && overlapDuration.compareTo(duration2) < 0;
     }
 
     /**
@@ -235,12 +262,44 @@ public class CalendarController {
             messages.add(h1.getUnidadeCurricular() + " " + h1.getDataAula() + " (" + h1.getHoraInicio() + " - " + h1.getHoraFim() + ") [ X ] " + h2.getUnidadeCurricular() + " " + h2.getDataAula() + " (" + h2.getHoraInicio() + " - " + h2.getHoraFim() + ")\n");
         }
         List<String> paginatedMessages = paginateMessages(messages, overlappingPageNumber);
+        model.addAttribute("overlappingTotalMessages", messages.size());
         model.addAttribute("overlappingLessonsMessages", paginatedMessages);
+        model.addAttribute("overlappingPageNumber", overlappingPageNumber);
         model.addAttribute("disableOverlappingPrevPage", overlappingPageNumber == 0);
         model.addAttribute("disableOverlappingNextPage", paginatedMessages.size() < 10);
         int overlappingTotalPages = (int) Math.ceil((double) messages.size() / 10);
         model.addAttribute("overlappingTotalPages", overlappingTotalPages);
     }
+
+    private void displayOverbookedLessonsMessage(Model model) {
+        List<String> messages = new ArrayList<>();
+        for (Horario h : horariosSobrelotacao) {
+            messages.add(h.getUnidadeCurricular() + " " + h.getDataAula() + " (" + h.getHoraInicio() + " - " + h.getHoraFim() + ")\n");
+        }
+        List<String> paginatedMessages = paginateMessages(messages, overbookedPageNumber);
+        model.addAttribute("overbookedTotalMessages", messages.size());
+        model.addAttribute("overbookedLessonsMessages", paginatedMessages);
+        model.addAttribute("overbookedPageNumber", overbookedPageNumber);
+        model.addAttribute("disableOverbookedPrevPage", overbookedPageNumber == 0);
+        model.addAttribute("disableOverbookedNextPage", paginatedMessages.size() < 10 || (overbookedPageNumber + 1) * 10 >= messages.size());
+        int overbookedTotalPages = (int) Math.ceil((double) messages.size() / 10);
+        model.addAttribute("overbookedTotalPages", overbookedTotalPages);
+    }
+
+
+    private List<String> paginateMessages(List<String> messages, int pageNumber) {
+        int itemsPerPage = 10;
+        int fromIndex = pageNumber * itemsPerPage;
+
+        // Check if fromIndex is out of bounds and return an empty list
+        if (fromIndex >= messages.size()) {
+            return new ArrayList<>();
+        }
+
+        int toIndex = Math.min(fromIndex + itemsPerPage, messages.size());
+        return messages.subList(fromIndex, toIndex);
+    }
+
 
     /**
      * @param model
@@ -258,40 +317,7 @@ public class CalendarController {
                 LOGGER.error("Invalid 'Inscritos' or 'LotacaoSala' value for horario: " + h, e);
             }
         }
-        //displayOverbookedLessonsMessage(model);
-    }
-
-    /**
-     * @param model
-     */
-    @GetMapping("/list")
-    public String list(@RequestParam(value = "page", defaultValue = "0") int page,
-                       @RequestParam(value = "size", defaultValue = "10") int size,
-                       Model model) {
-
-        int start = page * size;
-        int end = Math.min(start + size, horariosSobrelotacao.size() + horariosSobrepostos.size());
-
-        List<String> messagesToShow = new ArrayList<>();
-        for (int i = start; i < end; i++) {
-            if (i < horariosSobrelotacao.size()) {
-                Horario h = horariosSobrelotacao.get(i);
-                messagesToShow.add("Existe sobrelotação na Sala " + h.getSala() + " relativamente à UC " + h.getUnidadeCurricular() + " ,no dia " + h.getDataAula() + " ,entre as " + h.getHoraInicio() + " e as " + h.getHoraFim() + " ,");
-            } else {
-                Pair<Horario, Horario> pair = horariosSobrepostos.stream().skip(i - horariosSobrelotacao.size()).findFirst().orElse(null);
-                if (pair != null) {
-                    Horario h1 = pair.getLeft();
-                    Horario h2 = pair.getRight();
-                    messagesToShow.add("Sobreposição de Horários: A UC " + h1.getUnidadeCurricular() + " e a UC " + h2.getUnidadeCurricular() + " têm aulas sobrepostas no dia " + h1.getDataAula() + " entre as " + h1.getHoraInicio() + " e as " + h1.getHoraFim());
-                }
-            }
-        }
-
-        model.addAttribute("messages", messagesToShow);
-        model.addAttribute("currentPage", page);
-        model.addAttribute("totalPages", (horariosSobrelotacao.size() + horariosSobrepostos.size() + size - 1) / size);
-
-        return "list";
+        displayOverbookedLessonsMessage(model);
     }
 }
 
