@@ -21,7 +21,6 @@ public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
     @Override
     public List<Horario> read(Reader reader) throws IOException {
         try (BufferedReader br = new BufferedReader(reader)) {
-            br.skip(2);
             return br.lines()
                     .map(line -> line.split(";"))
                     .filter(tokens -> tokens.length == 11)

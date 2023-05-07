@@ -51,14 +51,12 @@ public class CalendarController {
      * Displays the calendar view with the course schedules from the input file.
      *
      * @param model    the Spring model used to pass data to the view
-     * @param filePath the path of the input file to read the course schedules from
      * @return the name of the calendar view template
      * @throws Exception if an error occurs while reading or processing the course
      *                   schedules
      */
     @GetMapping("/calendar")
     public String displayCalendar(Model model,
-                                  @RequestParam(name = "file", required = false) String filePath,
                                   @RequestParam(name = "currentPath", required = false) String currentPath,
                                   @RequestParam(value = "overlappingPage", defaultValue = "0") int overlappingPage,
                                   @RequestParam(value = "overbookedPage", defaultValue = "0") int overbookedPage
@@ -106,11 +104,10 @@ public class CalendarController {
      *                           file
      * @param redirectAttributes the redirect attributes used to pass data to the
      *                           next request
-     * @param model              the Spring model used to pass data to the view
      * @return the name of the calendar view template
      */
     @PostMapping("/handleFileUpload")
-    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+    public String handleFileUpload(HttpServletRequest request, RedirectAttributes redirectAttributes) {
         filteredHorarios.clear();
         String path = request.getParameter("path");
         if (path != null)
@@ -144,7 +141,7 @@ public class CalendarController {
                 }
             }
         }
-        return displayCalendar(model, currentUrlOrPath, currentUrlOrPath, overlappingPageNumber, overbookedPageNumber);
+        return displayCalendar(model, currentUrlOrPath, overlappingPageNumber, overbookedPageNumber);
     }
 
     /**
@@ -157,12 +154,10 @@ public class CalendarController {
      *                           webcal URL
      * @param redirectAttributes the RedirectAttributes to add attributes to the
      *                           redirect URL
-     * @param model              the Model to add attributes to the view
      * @return the updated calendar view
-     * @throws Exception if an error occurs while displaying the calendar view
      */
     @PostMapping("/handleURLUpload")
-    public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
+    public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes) {
         filteredHorarios.clear();
         String url = request.getParameter("CalendarURL");
         if (url != null)

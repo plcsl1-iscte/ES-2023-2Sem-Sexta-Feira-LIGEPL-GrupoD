@@ -7,8 +7,6 @@ import net.fortuna.ical4j.data.ParserException;
 import net.fortuna.ical4j.model.Calendar;
 import net.fortuna.ical4j.model.Component;
 import net.fortuna.ical4j.model.Property;
-import net.fortuna.ical4j.model.component.CalendarComponent;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.time.LocalDateTime;
@@ -35,8 +33,7 @@ public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
         Calendar calendar = builder.build(reader);
         reader.close();
 
-        for (Iterator<CalendarComponent> i = calendar.getComponents().iterator(); i.hasNext();) {
-            Component component = i.next();
+        for (Component component : calendar.getComponents()) {
             if (component.getName().equals(Component.VEVENT)) {
                 Horario horario = createHorarioFromComponent(component);
                 if (horario != null) {
