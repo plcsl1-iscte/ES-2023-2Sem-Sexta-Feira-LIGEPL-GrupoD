@@ -15,8 +15,6 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.List;
 
-import static java.lang.System.out;
-
 /**
  * The HorarioWriter class provides methods to convert a List of Horario objects into
  * different string representations, such as JSON and CSV.
@@ -79,7 +77,6 @@ public class HorarioWriter {
 
     public static String listToCsv(List<Horario> horarios)
             throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
-        out.println("Size of horarios: " + horarios.size());
 
         StringWriter stringWriter = new StringWriter();
 
