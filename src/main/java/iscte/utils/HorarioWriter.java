@@ -17,7 +17,7 @@ import static java.lang.System.*;
 
 public class HorarioWriter {
 
-    private HorarioWriter() {
+    public HorarioWriter() {
 
     }
 
