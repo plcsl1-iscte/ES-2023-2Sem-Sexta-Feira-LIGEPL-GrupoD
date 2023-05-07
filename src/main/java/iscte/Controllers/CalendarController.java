@@ -9,9 +9,11 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.http.HttpHeaders;
@@ -30,35 +32,117 @@ public class CalendarController {
 
   String currentUrlOrPath = "";
   private List<Horario> horarios = new ArrayList<Horario>();
-  private List<Horario> filteredHorarios = new ArrayList<Horario>();
+  private List<Horario> filteredHorariosByUC = new ArrayList<Horario>();
   private Set<Pair<Horario, Horario>> horariosSobrepostos = new HashSet<>();
   private ArrayList<Horario> horariosSobrelotacao = new ArrayList<Horario>();
-  private List<Horario> horariosToDisplay = new ArrayList<Horario>();
-  private int overlappingPageNumber = 0;
-  private int overbookedPageNumber = 0;
+  List<Horario> filteredHorariosByCurso = new ArrayList<Horario>();
+  private String curso = "none";
+  private String uc = "none";
+  Set<String> uniqueUCs;
+  Set<String> uniqueCursos;
 
   @GetMapping("/")
-  public String displayCalendar(Model model, String filePath) throws Exception {
-    if (model != null && filePath != null) {
+  public String displayCalendar(
+    Model model,
+    String filePath,
+    @RequestParam(name = "curso", required = false) String curso,
+    @RequestParam(name = "uc", required = false) String uc
+  ) throws Exception {
+    if (model != null) {
+      this.uc = uc;
+      this.curso = curso;
+      System.out.println("UC " + uc);
+      System.out.println("curso: " + curso);
+
       HorarioReader reader = new HorarioReader(filePath);
 
       horarios = reader.read();
 
-      Set<String> uniqueUCs = new HashSet<>();
+      System.out.println("Horarios " + horarios.size());
+
+      // Filter horarios based on the selected curso
+      if (curso != null && !curso.equals("none")) {
+        filteredHorariosByCurso =
+          horarios
+            .stream()
+            .filter(h -> h.getCurso().equals(curso))
+            .collect(Collectors.toList());
+      }
+      System.out.println(
+        "filteredHorariosByCurso " + filteredHorariosByCurso.size()
+      );
+
       for (Horario horario : horarios) {
-        uniqueUCs.add(horario.getUnidadeCurricular());
+        if (horario.getCurso().equals(curso)) System.out.println(
+          "Horario curso: " + horario.getCurso()
+        );
       }
 
-      if (filteredHorarios.size() > 0) {
-        horariosToDisplay = filteredHorarios;
-      } else {
-        horariosToDisplay = horarios;
+      filteredHorariosByCurso =
+        horarios
+          .stream()
+          .filter(h -> h.getCurso().equals(curso))
+          .collect(Collectors.toList());
+
+      System.out.println(
+        "Filtered horarios by curso size: " + filteredHorariosByCurso.size()
+      );
+
+      System.out.println("filteredHorariosByUC " + filteredHorariosByUC.size());
+
+      if (uniqueCursos == null) {
+        // Extract unique Cursos and UCs
+        uniqueCursos =
+          horarios.stream().map(Horario::getCurso).collect(Collectors.toSet());
+      }
+
+      if (uniqueUCs == null) {
+        uniqueUCs =
+          horarios
+            .stream()
+            .map(Horario::getUnidadeCurricular)
+            .collect(Collectors.toSet());
       }
 
       checkForOverlappingLessons(model);
       checkOverbookedEvents(model);
 
+      System.out.println(
+        "uniqueCursos " + uniqueCursos != null
+          ? uniqueCursos.toString()
+          : "uniqueCursos is null"
+      );
+      System.out.println(
+        "filteredHorariosByUC " + filteredHorariosByUC != null
+          ? filteredHorariosByUC.toString()
+          : "filteredHorariosByUC is null"
+      );
+      System.out.println("Horarios " + horarios.size());
+      System.out.println("filteredHorariosByUC " + filteredHorariosByUC.size());
+      System.out.println(
+        "filteredHorariosByCurso " + filteredHorariosByCurso.size()
+      );
+
+      List<Horario> horariosToDisplay = new ArrayList<>();
+
+      if (
+        filteredHorariosByCurso != null && !filteredHorariosByCurso.isEmpty()
+      ) {
+        horariosToDisplay.addAll(filteredHorariosByCurso);
+      }
+
+      if (filteredHorariosByUC != null && !filteredHorariosByUC.isEmpty()) {
+        horariosToDisplay.addAll(filteredHorariosByUC);
+      }
+
+      if (horariosToDisplay.isEmpty()) {
+        horariosToDisplay = horarios;
+      }
+
+      System.out.println("horariosToDisplay " + horariosToDisplay.size());
+
       model.addAttribute("horarios", horariosToDisplay);
+      model.addAttribute("cursos", uniqueCursos);
       model.addAttribute("ucs", uniqueUCs);
     }
     return "calendar";
@@ -73,7 +157,7 @@ public class CalendarController {
     String path = request.getParameter("path");
     if (path == null) path = "";
     currentUrlOrPath = path;
-    return displayCalendar(model, currentUrlOrPath);
+    return displayCalendar(model, currentUrlOrPath, curso, uc);
   }
 
   @PostMapping("/selectUCs")
@@ -81,21 +165,13 @@ public class CalendarController {
     @RequestParam("ucs") List<String> selectedUCs,
     Model model
   ) throws Exception {
-    // Print the selected UCs to the console
-    System.out.println("Selected UCs: " + selectedUCs);
-
-    filteredHorarios.clear();
-
-    for (Horario h : horarios) {
-      Boolean found = false;
-      for (String uc : selectedUCs) {
-        if (h.getUnidadeCurricular().equals(uc) && found == false) {
-          filteredHorarios.add(h);
-        }
-      }
+    if (!selectedUCs.isEmpty()) {
+      uc = String.join(",", selectedUCs); // Update the 'uc' variable with the selected UCs
+    } else {
+      uc = "none";
     }
 
-    return displayCalendar(model, currentUrlOrPath);
+    return "redirect:/filtered?curso=" + curso + "&ucs=" + uc;
   }
 
   @PostMapping("/handleURLUpload")
@@ -104,10 +180,10 @@ public class CalendarController {
     RedirectAttributes redirectAttributes,
     Model model
   ) throws Exception {
-    String url = request.getParameter("CalendarURL"); // Change this line
+    String url = request.getParameter("CalendarURL");
     if (url == null) url = "";
     currentUrlOrPath = url;
-    return displayCalendar(model, currentUrlOrPath);
+    return displayCalendar(model, currentUrlOrPath, null, null);
   }
 
   @PostMapping("/download/csv")
@@ -142,18 +218,21 @@ public class CalendarController {
     );
   }
 
-  private void fileToList(String filePath) throws Exception {
-    if (filePath != null && !filePath.isEmpty()) {
-      HorarioReader reader = new HorarioReader(filePath);
-      horarios = reader.read();
+  private List<Horario> getFilteredHorarios() {
+    if (!filteredHorariosByUC.isEmpty()) {
+      return filteredHorariosByUC;
+    } else if (!filteredHorariosByCurso.isEmpty()) {
+      return filteredHorariosByCurso;
     } else {
-      horarios = new ArrayList<>(); // Initialize an empty list if the file path is not valid
+      return horarios;
     }
   }
 
   private void checkForOverlappingLessons(Model model) {
     horariosSobrepostos.clear();
-    List<Horario> checkingOverlap = horariosToDisplay;
+    List<Horario> checkingOverlap = filteredHorariosByUC;
+    if (filteredHorariosByCurso.size() > 0) checkingOverlap =
+      filteredHorariosByCurso;
     for (int i = 0; i < checkingOverlap.size(); i++) {
       for (int j = i + 1; j < checkingOverlap.size(); j++) {
         Horario horario1 = checkingOverlap.get(i);
@@ -219,24 +298,14 @@ public class CalendarController {
 
       messages.add(message.toString());
     }
-    List<String> paginatedMessages = paginateMessages(
-      messages,
-      overlappingPageNumber
-    );
-    model.addAttribute("overlappingLessonsMessages", paginatedMessages);
-    model.addAttribute(
-      "disableOverlappingPrevPage",
-      overlappingPageNumber == 0
-    );
-    model.addAttribute(
-      "disableOverlappingNextPage",
-      paginatedMessages.size() < 10
-    );
+    model.addAttribute("overlappingLessonsMessages", messages);
   }
 
   private void checkOverbookedEvents(Model model) {
     horariosSobrelotacao.clear();
-    List<Horario> checkingOverbook = horariosToDisplay;
+    List<Horario> checkingOverbook = filteredHorariosByUC;
+    if (filteredHorariosByCurso.size() > 0) checkingOverbook =
+      filteredHorariosByCurso;
     for (Horario h : checkingOverbook) {
       boolean areParseableToIntegers = true;
 
@@ -251,9 +320,6 @@ public class CalendarController {
         areParseableToIntegers = false;
       }
     }
-    System.out.println(
-      "Existem " + horariosSobrelotacao.size() + " horarios sobrepostos."
-    );
     displayOverbookedLessonsMessage(model);
   }
 
@@ -277,66 +343,42 @@ public class CalendarController {
 
       messages.add(message.toString());
     }
-    List<String> paginatedMessages = paginateMessages(
-      messages,
-      overbookedPageNumber
-    );
-    model.addAttribute("overbookedLessonsMessages", paginatedMessages);
-    model.addAttribute("disableOverbookedPrevPage", overbookedPageNumber == 0);
-    model.addAttribute(
-      "disableOverbookedNextPage",
-      paginatedMessages.size() < 10
-    );
+    model.addAttribute("overbookedLessonsMessages", messages);
   }
 
-  private List<String> paginateMessages(List<String> messages, int pageNumber) {
-    int pageSize = 10;
-    int fromIndex = pageNumber * pageSize;
-    int toIndex = Math.min(fromIndex + pageSize, messages.size());
-    return messages.subList(fromIndex, toIndex);
-  }
-
-  @PostMapping("/overlappingPrev")
-  public String handleOverlappingPrev(Model model) throws Exception {
-    if (overlappingPageNumber > 0) {
-      overlappingPageNumber--;
-    }
-    return displayCalendar(model, currentUrlOrPath);
-  }
-
-  @PostMapping("/overlappingNext")
-  public String handleOverlappingNext(
+  @GetMapping("/filtered")
+  public String displayFilteredCalendar(
     Model model,
-    @RequestParam(
-      "overlappingLessonsMessages"
-    ) List<String> overlappingLessonsMessages
+    @RequestParam(name = "curso", required = false) String curso,
+    @RequestParam(name = "ucs", required = false) String ucs
   ) throws Exception {
-    int totalPages = (int) Math.ceil(overlappingLessonsMessages.size() / 10.0);
-    if (overlappingPageNumber < totalPages - 1) {
-      overlappingPageNumber++;
-    }
-    return displayCalendar(model, currentUrlOrPath);
-  }
+    this.curso = curso;
 
-  @PostMapping("/overbookedPrev")
-  public String handleOverbookedPrev(Model model) throws Exception {
-    if (overbookedPageNumber > 0) {
-      overbookedPageNumber--;
+    // Filter horarios based on the selected curso
+    if (curso != null && !curso.isEmpty()) {
+      filteredHorariosByCurso =
+        horarios
+          .stream()
+          .filter(h -> h.getCurso().equals(curso))
+          .collect(Collectors.toList());
+    } else {
+      filteredHorariosByCurso = horarios;
     }
-    return displayCalendar(model, currentUrlOrPath);
-  }
 
-  @PostMapping("/overbookedNext")
-  public String handleOverbookedNext(
-    Model model,
-    @RequestParam(
-      "overbookedLessonsMessages"
-    ) List<String> overbookedLessonsMessages
-  ) throws Exception {
-    int totalPages = (int) Math.ceil(overbookedLessonsMessages.size() / 10.0);
-    if (overbookedPageNumber < totalPages - 1) {
-      overbookedPageNumber++;
+    // Filter horarios based on the selected ucs, if any ucs are selected
+    if (ucs != null && !ucs.isEmpty()) {
+      List<String> selectedUCs = Arrays.asList(ucs.split(","));
+      filteredHorariosByUC =
+        filteredHorariosByCurso
+          .stream()
+          .filter(h -> selectedUCs.contains(h.getUnidadeCurricular()))
+          .collect(Collectors.toList());
+    } else {
+      filteredHorariosByUC = filteredHorariosByCurso;
     }
-    return displayCalendar(model, currentUrlOrPath);
+
+    // Rest of the code in displayCalendar() method, excluding the filtering part
+
+    return "calendar";
   }
 }
