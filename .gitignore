@@ -22,3 +22,16 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /target/
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/sonarlint/issuestore/index.pb
+/.idea/sonarlint/securityhotspotstore/index.pb
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_05_2023_11_35_[Changes]/shelved.patch
+/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2023_23_03_[Changes]/shelved.patch
+/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_05_2023_11_35__Changes_.xml
+/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2023_23_03__Changes_.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+
