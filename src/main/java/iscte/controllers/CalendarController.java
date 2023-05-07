@@ -53,7 +53,8 @@ public class CalendarController {
      * @param model    the Spring model used to pass data to the view
      * @param filePath the path of the input file to read the course schedules from
      * @return the name of the calendar view template
-     * @throws Exception if an error occurs while reading or processing the course schedules
+     * @throws Exception if an error occurs while reading or processing the course
+     *                   schedules
      */
     @GetMapping("/calendar")
     public String displayCalendar(Model model,
@@ -98,10 +99,13 @@ public class CalendarController {
     }
 
     /**
-     * Handles the uploaded course schedule input file and displays the calendar view.
+     * Handles the uploaded course schedule input file and displays the calendar
+     * view.
      *
-     * @param request            the HTTP servlet request containing the uploaded file
-     * @param redirectAttributes the redirect attributes used to pass data to the next request
+     * @param request            the HTTP servlet request containing the uploaded
+     *                           file
+     * @param redirectAttributes the redirect attributes used to pass data to the
+     *                           next request
      * @param model              the Spring model used to pass data to the view
      * @return the name of the calendar view template
      */
@@ -117,18 +121,22 @@ public class CalendarController {
         return "redirect:/calendar";
     }
 
-
     /**
-     * Filters the course schedules to display in the calendar view based on the selected courses.
+     * Filters the course schedules to display in the calendar view based on the
+     * selected courses.
      *
      * @param selectedUCs the list of selected courses to filter by
      * @param model       the Spring model used to pass data to the view
      * @return the name of the calendar view template
-     * @throws Exception if an error occurs while reading or processing the course schedules
+     * @throws Exception if an error occurs while reading or processing the course
+     *                   schedules
      */
     @PostMapping("/selectUCs")
     public String processSelectedUCs(@RequestParam("ucs") List<String> selectedUCs, Model model) throws Exception {
+        // Print the selected UCs to the console
+
         filteredHorarios.clear();
+
         for (Horario h : horarios) {
             for (String uc : selectedUCs) {
                 if (h.getUnidadeCurricular().equals(uc)) {
@@ -140,11 +148,18 @@ public class CalendarController {
     }
 
     /**
-     * @param request
-     * @param redirectAttributes
-     * @param model
-     * @return
-     * @throws Exception
+     *
+     * Handles the POST request to upload a webcal URL, sets the current URL or
+     * path,
+     * and returns the updated calendar view.
+     *
+     * @param request            the HttpServletRequest containing the uploaded
+     *                           webcal URL
+     * @param redirectAttributes the RedirectAttributes to add attributes to the
+     *                           redirect URL
+     * @param model              the Model to add attributes to the view
+     * @return the updated calendar view
+     * @throws Exception if an error occurs while displaying the calendar view
      */
     @PostMapping("/handleURLUpload")
     public String handleWebCalUrlUpload(HttpServletRequest request, RedirectAttributes redirectAttributes, Model model) {
@@ -158,17 +173,24 @@ public class CalendarController {
         return "redirect:/calendar";
     }
 
-
     /**
-     * Handles the URL of the course schedule input file and displays the calendar view.
+     * Handles the URL of the course schedule input file and displays the calendar
+     * view. This method is triggered when a POST request is made to "/download/csv"
+     * endpoint. It converts the list of Horario objects to a CSV format and creates
+     * a byte array response for the user to download the CSV file.
      *
-     * @return
-     * @throws CsvDataTypeMismatchException
-     * @throws CsvRequiredFieldEmptyException
-     * @throws IOException
+     * @return ResponseEntity<byte[]> The response entity containing the byte array
+     *         of the CSV file and the HTTP headers.
+     * @throws CsvDataTypeMismatchException   Thrown when there is a data type
+     *                                        mismatch while writing the CSV file.
+     * @throws CsvRequiredFieldEmptyException Thrown when a required field is empty
+     *                                        while writing the CSV file.
+     * @throws IOException                    Thrown when there is an I/O error
+     *                                        while writing the CSV file.
      */
     @PostMapping("/download/csv")
-    public ResponseEntity<byte[]> downloadCsvFile() throws CsvDataTypeMismatchException, CsvRequiredFieldEmptyException, IOException {
+    public ResponseEntity<byte[]> downloadCsvFile()
+            throws CsvDataTypeMismatchException, CsvRequiredFieldEmptyException, IOException {
         String csvContent = HorarioWriter.listToCsv(horariosToDisplay);
 
         HttpHeaders headers = new HttpHeaders();
@@ -179,8 +201,15 @@ public class CalendarController {
     }
 
     /**
-     * @return
-     * @throws JsonProcessingException
+     * Handles the URL of the course schedule input file and displays the JSON view.
+     * This method is triggered when a POST request is made to "/download/json"
+     * endpoint. It converts the list of Horario objects to a JSON format and
+     * creates a byte array response for the user to download the JSON file.
+     *
+     * @return ResponseEntity<byte[]> The response entity containing the byte array
+     *         of the JSON file and the HTTP headers.
+     * @throws JsonProcessingException Thrown when there is an error during JSON
+     *                                 serialization.
      */
     @PostMapping("/download/json")
     public ResponseEntity<byte[]> downloadJsonFile() throws JsonProcessingException {
@@ -194,20 +223,31 @@ public class CalendarController {
     }
 
     /**
-     * @param model
+     * Checks for overlapping lessons among the Horario objects in the
+     * {@link #horariosToDisplay} list and populates
+     * the {@link #horariosSobrepostos} set with pairs of overlapping Horario
+     * objects.
+     * This method groups Horario objects by date and checks for overlaps only
+     * between Horarios with the same date.
+     * For each group, it sorts the Horarios by start time and then checks for
+     * overlaps between each pair of adjacent Horarios.
+     *
+     * @param model the Spring Model object to which the overlapping lessons message
+     *              should be added
      */
     private void checkForOverlappingLessons(Model model) {
         horariosSobrepostos.clear();
         List<Horario> checkingOverlap = horariosToDisplay;
 
         // Group Horario objects by date
-        Map<String, List<Horario>> horariosByDate = checkingOverlap.stream().filter(horario -> horario.getDataAula() != null).collect(Collectors.groupingBy(Horario::getDataAula));
-
+        Map<String, List<Horario>> horariosByDate = checkingOverlap.stream()
+                .filter(horario -> horario.getDataAula() != null).collect(Collectors.groupingBy(Horario::getDataAula));
 
         horariosSobrepostos = horariosByDate.values().stream().parallel().flatMap(horariosWithSameDate -> {
             Set<Pair<Horario, Horario>> overlaps = new HashSet<>();
             // Sort the horarios by start time
-            List<Horario> sortedHorarios = horariosWithSameDate.stream().sorted(Comparator.comparing(Horario::getHoraInicio)).collect(Collectors.toList());
+            List<Horario> sortedHorarios = horariosWithSameDate.stream()
+                    .sorted(Comparator.comparing(Horario::getHoraInicio)).collect(Collectors.toList());
 
             for (int i = 0; i < sortedHorarios.size(); i++) {
                 Horario horario1 = sortedHorarios.get(i);
@@ -228,9 +268,11 @@ public class CalendarController {
     }
 
     /**
-     * @param horario1
-     * @param horario2
-     * @return
+     * Checks if two Horario objects overlap in time.
+     *
+     * @param horario1 the first Horario object
+     * @param horario2 the second Horario object
+     * @return true if the two Horario objects overlap, false otherwise
      */
     private boolean checkOverlap(Horario horario1, Horario horario2) {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -251,7 +293,11 @@ public class CalendarController {
     }
 
     /**
-     * @param model
+     * Generates and paginates a list of messages to inform the user about
+     * overlapping lessons.
+     *
+     * @param model The Model object to which the messages will be added as
+     *              attributes.
      */
     private void displayOverlappingLessonsMessage(Model model) {
         List<String> messages = new ArrayList<>();
@@ -259,7 +305,9 @@ public class CalendarController {
             Horario h1 = lessonPair.getLeft();
             Horario h2 = lessonPair.getRight();
 
-            messages.add(h1.getUnidadeCurricular() + " " + h1.getDataAula() + " (" + h1.getHoraInicio() + " - " + h1.getHoraFim() + ") [ X ] " + h2.getUnidadeCurricular() + " " + h2.getDataAula() + " (" + h2.getHoraInicio() + " - " + h2.getHoraFim() + ")\n");
+            messages.add(h1.getUnidadeCurricular() + " " + h1.getDataAula() + " (" + h1.getHoraInicio() + " - "
+                    + h1.getHoraFim() + ") [ X ] " + h2.getUnidadeCurricular() + " " + h2.getDataAula() + " ("
+                    + h2.getHoraInicio() + " - " + h2.getHoraFim() + ")\n");
         }
         List<String> paginatedMessages = paginateMessages(messages, overlappingPageNumber);
         model.addAttribute("overlappingTotalMessages", messages.size());
@@ -302,7 +350,9 @@ public class CalendarController {
 
 
     /**
-     * @param model
+     * Checks for events that exceed the capacity of the room.
+     *
+     * @param model The Model object to add the list of overbooked events to.
      */
     private void checkOverbookedEvents(Model model) {
         horariosSobrelotacao.clear();

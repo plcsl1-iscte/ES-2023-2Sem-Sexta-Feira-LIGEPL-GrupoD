@@ -11,10 +11,12 @@ import java.util.stream.Collectors;
 
 public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
     /**
+     * Reads a list of Horario objects from a CSV input stream.
      *
-     * @param reader
-     * @return
-     * @throws IOException
+     * @param reader the reader object for the CSV input stream
+     * @return the list of Horario objects read from the input stream
+     * @throws IOException if an I/O error occurs while reading from the input
+     *                     stream
      */
     @Override
     public List<Horario> read(Reader reader) throws IOException {
@@ -29,9 +31,11 @@ public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
     }
 
     /**
-     *
-     * @param tokens
-     * @return
+     * 
+     * Parses a Horario object from an array of tokens.
+     * 
+     * @param tokens an array of string tokens representing a Horario object
+     * @return the parsed Horario object
      */
     private Horario parseHorarioFromTokens(String[] tokens) {
         return Horario.builder()
@@ -50,9 +54,11 @@ public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
     }
 
     /**
-     *
-     * @param s
-     * @return
+     * 
+     * Removes any double quotes from a given string.
+     * 
+     * @param s the string to remove quotes from
+     * @return the string without quotes
      */
     private String removeQuotes(String s) {
         return s.replace("\"", "");
