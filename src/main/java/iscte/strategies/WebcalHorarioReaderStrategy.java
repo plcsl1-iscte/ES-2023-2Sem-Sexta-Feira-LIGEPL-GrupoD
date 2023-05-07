@@ -13,6 +13,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * This class implements the {@link iscte.interfaces.HorarioReaderStrategy} interface to provide a strategy for
+ * parsing data from an iCalendar input stream. It reads from a Reader object containing iCalendar data, and parses
+ * the data using the {@link net.fortuna.ical4j.data.CalendarBuilder} class provided by the iCal4j library. The
+ * resulting Horario objects are created by extracting relevant information from each VEVENT component of the
+ * iCalendar data.
+ */
 public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
 
     private static final String INDISPONIVEL = "Indisponível";

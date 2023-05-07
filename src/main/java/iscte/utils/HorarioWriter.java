@@ -1,8 +1,5 @@
 package iscte.utils;
 
-import java.io.IOException;
-import java.io.StringWriter;
-import java.util.List;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVWriter;
@@ -14,18 +11,43 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import iscte.entities.Horario;
 
-import static java.lang.System.*;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.List;
 
+import static java.lang.System.out;
+
+/**
+ * The HorarioWriter class provides methods to convert a List of Horario objects into
+ * different string representations, such as JSON and CSV.
+ * It includes two public static methods:
+ * <li>{@link #listToJson(List)}</li>
+ * <li>{@link #listToCsv(List)}</li>
+ * The class also defines a private constructor, which is empty and has no logic,
+ * to ensure that no objects of the HorarioWriter class can be created.
+ * The listToJson method uses the Jackson ObjectMapper to convert the List of Horario
+ * objects into a JSON string.
+ * The listToCsv method uses the OpenCSV library to convert the List of Horario
+ * objects into a CSV string. The method expects the Horario class to have fields
+ * with names that match the column headers in the CSV_HEADER constant defined in
+ * the class.
+ */
 public class HorarioWriter {
-
-    public HorarioWriter() {
-
-    }
 
     private static final String[] CSV_HEADER = {
             "curso", "unidadeCurricular", "turno", "turma", "inscritosNoTurno",
             "diaDaSemana", "horaInicioAula", "horaFimAula", "dataAula", "salaAtribuidaAula", "lotacaoSala"
     };
+
+    /**
+     * This constructor is empty because there are no additional operations that need to be performed
+     * during the initialization of an object of the HorarioWriter class.
+     * All necessary initializations are done through other constructor overloads or by setting
+     * default values for class variables.
+     */
+    private HorarioWriter() {
+
+    }
 
     /**
      * Converts a List of Horario objects into a JSON string representation.
@@ -54,7 +76,7 @@ public class HorarioWriter {
      * @throws CsvRequiredFieldEmptyException If a required field in an object of
      *                                        the list is empty.
      */
-    
+
     public static String listToCsv(List<Horario> horarios)
             throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         out.println("Size of horarios: " + horarios.size());

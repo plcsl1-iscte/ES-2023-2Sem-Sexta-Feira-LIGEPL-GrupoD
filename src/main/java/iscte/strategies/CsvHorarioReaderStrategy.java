@@ -9,6 +9,10 @@ import java.io.Reader;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * The CsvHorarioReaderStrategy class is an implementation of the HorarioReaderStrategy interface
+ * that can read a list of Horario objects from a CSV input stream.
+ */
 public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
     /**
      * Reads a list of Horario objects from a CSV input stream.

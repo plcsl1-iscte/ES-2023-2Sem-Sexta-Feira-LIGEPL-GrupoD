@@ -36,11 +36,9 @@ class HorarioReaderTest {
         HorarioReader reader3 = new HorarioReader(webcal);
         List<Horario> horarios3 = reader2.read();
 
-        HorarioWriter writer1 = new HorarioWriter();
-        String download1 = writer1.listToJson(horarios);
+        String download1 = HorarioWriter.listToJson(horarios);
 
-        HorarioWriter writer2 = new HorarioWriter();
-        String download2 = writer2.listToCsv(horarios);
+        String download2 = HorarioWriter.listToCsv(horarios);
 
         assertNotNull(download1, "JSON output should not be null");
         assertNotNull(download2, "CSV output should not be null");

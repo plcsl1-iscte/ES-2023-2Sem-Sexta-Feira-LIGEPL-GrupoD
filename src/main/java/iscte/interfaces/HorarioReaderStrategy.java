@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
 
+/**
+ * The HorarioReaderStrategy interface defines the contract for classes that can read a list of Horario objects
+ * from a Reader, which can be in any supported format (CSV, JSON, etc).
+ */
 public interface HorarioReaderStrategy {
     /**
      * 

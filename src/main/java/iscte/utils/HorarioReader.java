@@ -13,6 +13,23 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Utility class for reading Horario objects from files or webcal URLs.
+ *
+ * The appropriate reader strategy is selected based on the file extension or
+ *
+ * the URL type. The supported file formats are CSV and JSON, and the webcal URL
+ *
+ * format is also supported.
+ *
+ * @see iscte.interfaces.HorarioReaderStrategy
+ *
+ * @see iscte.strategies.CsvHorarioReaderStrategy
+ *
+ * @see iscte.strategies.JsonHorarioReaderStrategy
+ *
+ * @see iscte.strategies.WebcalHorarioReaderStrategy
+ */
 public class HorarioReader {
     private final String filePath;
 

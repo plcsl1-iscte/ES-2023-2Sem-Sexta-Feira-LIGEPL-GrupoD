@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -35,7 +34,23 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @Controller
+/**
+ * A class that represents a calendar controller.
+ *
+ * ==== ARGUMENTS ======
+ * - CURRENT_PATH_ATTRIBUTE: The name of the attribute that holds the current path in the model.
+ * - LOGGER: The logger used to log messages.
+ * - filteredHorarios: The list of horarios that have been filtered.
+ * - horariosSobrelotacao: The list of horarios that are overbooked.
+ * - horarios: The list of all horarios.
+ * - horariosSobrepostos: The set of horarios that overlap.
+ * - horariosToDisplay: The list of horarios to be displayed on the calendar.
+ * - overlappingPageNumber: The current page number for the overlapping horarios.
+ * - overbookedPageNumber: The current page number for the overbooked horarios.
+ * - currentUrlOrPath: The current URL or path.
+ */
 public class CalendarController {
+
     private static final String CURRENT_PATH_ATTRIBUTE = "currentPath";
     static final Logger LOGGER = (Logger) LoggerFactory.getLogger(CalendarController.class);
     private final List<Horario> filteredHorarios = new ArrayList<>();
@@ -314,6 +329,11 @@ public class CalendarController {
         model.addAttribute("overlappingTotalPages", overlappingTotalPages);
     }
 
+    /**
+     Displays a message to the user indicating that there are overbooked lessons and
+     populates the view model with the necessary information for displaying paginated messages.
+     @param model the model to be populated with the necessary information for the view
+     */
     private void displayOverbookedLessonsMessage(Model model) {
         List<String> messages = new ArrayList<>();
         for (Horario h : horariosSobrelotacao) {
@@ -329,7 +349,14 @@ public class CalendarController {
         model.addAttribute("overbookedTotalPages", overbookedTotalPages);
     }
 
-
+    /**
+     Paginates a list of messages, returning a sublist of the original list containing at most itemsPerPage messages,
+     starting from the specified pageNumber.
+     @param messages the list of messages to be paginated
+     @param pageNumber the page number of the messages to be returned. The first page is page 0.
+     @return a sublist of the original list containing at most itemsPerPage messages, starting from the specified pageNumber.
+     If the pageNumber is out of bounds, an empty list is returned.
+     */
     private List<String> paginateMessages(List<String> messages, int pageNumber) {
         int itemsPerPage = 10;
         int fromIndex = pageNumber * itemsPerPage;

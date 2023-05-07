@@ -6,6 +6,12 @@ import java.time.format.DateTimeFormatter;
 import com.opencsv.bean.CsvBindByPosition;
 import lombok.*;
 
+
+/**
+ The Horario class represents a schedule of an academic course, containing information about the course,
+ unit, shift, class, enrolled students, weekday, start time, end time, date, classroom, and classroom capacity.
+ It also provides methods for setting the start and end times of the schedule.
+ */
 @Getter
 @Setter
 @ToString
@@ -36,8 +42,10 @@ public class Horario {
     private String lotacaoSala;
 
     /**
-     *
-     * @param startTime
+
+     Sets the start time of the schedule, using a LocalDateTime object representing the start time.
+
+     @param startTime the LocalDateTime object representing the start time of the schedule
      */
     public void setStartTime(LocalDateTime startTime) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
@@ -48,13 +56,13 @@ public class Horario {
     }
 
     /**
-     *
-     * @param endTime
+
+     Sets the end time of the schedule, using a LocalDateTime object representing the end time.
+     @param endTime the LocalDateTime object representing the end time of the schedule
      */
     public void setEndTime(LocalDateTime endTime) {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         setHoraFim(endTime.format(timeFormatter));
     }
-
-
 }
+
