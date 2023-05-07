@@ -59,7 +59,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(file), String.valueOf(file), 0,0);
+        String viewName = controller.displayCalendar(model, String.valueOf(file), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();
@@ -80,7 +80,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(file2), String.valueOf(file2), 0,0);
+        String viewName = controller.displayCalendar(model, String.valueOf(file2), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();
@@ -101,7 +101,7 @@ class HorarioReaderTest {
 
         // Call the method being tested
         CalendarController controller = new CalendarController();
-        String viewName = controller.displayCalendar(model, String.valueOf(webcal), String.valueOf(webcal), 0,0);
+        String viewName = controller.displayCalendar(model, String.valueOf(webcal), 0,0);
 
         // Verify that the list of horarios returned by the controller is not null
         assertThat(controller.getHorariosToDisplay()).isNotNull();
