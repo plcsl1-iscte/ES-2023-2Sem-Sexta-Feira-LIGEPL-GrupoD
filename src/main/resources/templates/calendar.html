@@ -151,6 +151,8 @@
           </div>
         </div>
       </div>
+      <!-- Pagination template -->
+      <div th:replace="pagination :: pagination"></div>
     </div>
   </div>
 
@@ -242,50 +244,6 @@
   integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3E+7VcJ5U0e7V8u8z" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz4fnFO9gybBud7tM2J1R1e7S0Sf+j81J7FhyqKgG4SE4bX3gaSfAA4IcW" crossorigin="anonymous"></script>
-
-<input type="hidden" name="overlappingLessonsMessages" th:value="${overlappingLessonsMessages}">
-<input type="hidden" name="overbookedLessonsMessages" th:value="${overbookedLessonsMessages}">
-
-
-<!-- Overlapping messages -->
-<div th:if="${not #lists.isEmpty(overlappingLessonsMessages)}" class="alert alert-danger" role="alert">
-  <div class="d-flex justify-content-between align-items-center">
-    <h4>Tem as seguintes aulas sobrepostas:</h4>
-    <div>
-      <form th:action="@{/overlappingPrev}" method="post">
-        <button type="submit" class="btn btn-sm btn-secondary" th:disabled="${disableOverlappingPrevPage}">&laquo;
-          Previous</button>
-      </form>
-      <form th:action="@{/overlappingNext}" method="post">
-        <button type="submit" class="btn btn-sm btn-secondary" th:disabled="${disableOverlappingNextPage}">Next
-          &raquo;</button>
-      </form>
-    </div>
-  </div>
-  <div th:each="msg : ${overlappingLessonsMessages}">
-    <p th:text="${msg}"></p>
-  </div>
-</div>
-
-<!-- Overbooked messages -->
-<div th:if="${not #lists.isEmpty(overbookedLessonsMessages)}" class="alert alert-info" role="alert">
-  <div class="d-flex justify-content-between align-items-center">
-    <h4>Tem as seguintes aulas sobrelotadas:</h4>
-    <div>
-      <form th:action="@{/overbookedPrev}" method="post">
-        <button type="submit" class="btn btn-sm btn-secondary" th:disabled="${disableOverbookedPrevPage}">&laquo;
-          Previous</button>
-      </form>
-      <form th:action="@{/overbookedNext}" method="post">
-        <button type="submit" class="btn btn-sm btn-secondary" th:disabled="${disableOverbookedNextPage}">Next
-          &raquo;</button>
-      </form>
-    </div>
-  </div>
-  <div th:each="msg : ${overbookedLessonsMessages}">
-    <p th:text="${msg}"></p>
-  </div>
-</div>
 
 
 
