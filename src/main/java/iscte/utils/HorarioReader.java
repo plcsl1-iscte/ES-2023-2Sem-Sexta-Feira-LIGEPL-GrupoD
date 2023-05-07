@@ -18,10 +18,20 @@ public class HorarioReader {
 
     static final Logger LOGGER = (Logger) LoggerFactory.getLogger(HorarioReader.class);
 
-
     public HorarioReader(String filePath) {
         this.filePath = filePath;
     }
+
+    /**
+     * Reads the input from a file or URL and returns a list of Horario objects
+     * created from the data. The method supports both local files and webcal URLs.
+     * The appropriate reader strategy is determined based on the file extension or
+     * the URL type.
+     *
+     * @return A List of Horario objects created from the input data.
+     * @throws Exception If an error occurs while reading the input or parsing the
+     *                   data.
+     */
 
     public List<Horario> read() throws Exception {
         String fileExtension = getFileExtension(filePath);
@@ -52,6 +62,15 @@ public class HorarioReader {
         }
     }
 
+    /**
+     * Retrieves the file extension from a given file path string.
+     * The method returns an empty string if no extension is found.
+     *
+     * @param filePath The file path string to extract the file extension from.
+     * @return A String containing the file extension in lowercase, or an empty
+     *         string if no extension is found.
+     */
+
     private String getFileExtension(String filePath) {
         int dotIndex = filePath.lastIndexOf('.');
         if (dotIndex > 0) {
@@ -59,6 +78,19 @@ public class HorarioReader {
         }
         return "";
     }
+
+    /**
+     * Retrieves the appropriate HorarioReaderStrategy based on the given file
+     * extension.
+     * The method returns a CsvHorarioReaderStrategy for "csv" files, a
+     * JsonHorarioReaderStrategy
+     * for "json" files, and null for any other file extension.
+     *
+     * @param fileExtension The file extension string to determine the appropriate
+     *                      reader strategy.
+     * @return A HorarioReaderStrategy corresponding to the file extension, or null
+     *         if no suitable strategy is found.
+     */
 
     @javax.annotation.Nullable
     private HorarioReaderStrategy getReaderStrategy(String fileExtension) {
@@ -72,4 +104,3 @@ public class HorarioReader {
         }
     }
 }
-

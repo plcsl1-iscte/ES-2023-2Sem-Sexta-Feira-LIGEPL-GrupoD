@@ -11,9 +11,12 @@ import java.util.List;
 
 public class JsonHorarioReaderStrategy implements HorarioReaderStrategy {
     /**
-     * @param reader
-     * @return
-     * @throws IOException
+     * 
+     * Reads Horario objects from a JSON file using the Gson library.
+     * 
+     * @param reader the reader for the JSON file
+     * @return a list of Horario objects parsed from the JSON file
+     * @throws IOException if there is an error reading the file
      */
     @Override
     public List<Horario> read(Reader reader) throws IOException {
@@ -22,5 +25,3 @@ public class JsonHorarioReaderStrategy implements HorarioReaderStrategy {
         return Arrays.asList(horarios);
     }
 }
-
-
