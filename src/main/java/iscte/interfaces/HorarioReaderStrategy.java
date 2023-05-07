@@ -9,5 +9,13 @@ import java.io.Reader;
 import java.util.List;
 
 public interface HorarioReaderStrategy {
+    /**
+     *
+     * @param reader
+     * @return
+     * @throws IOException
+     * @throws CsvValidationException
+     * @throws ParserException
+     */
     List<Horario> read(Reader reader) throws IOException, CsvValidationException, ParserException;
 }

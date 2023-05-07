@@ -19,6 +19,13 @@ public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
 
     private static final String INDISPONIVEL = "Indisponível";
 
+    /**
+     *
+     * @param reader
+     * @return
+     * @throws IOException
+     * @throws ParserException
+     */
     public List<Horario> read(Reader reader) throws IOException, ParserException {
         List<Horario> horarios = new ArrayList<>();
         CalendarBuilder builder = new CalendarBuilder();
@@ -38,6 +45,11 @@ public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
         return horarios;
     }
 
+    /**
+     *
+     * @param component
+     * @return
+     */
     private Horario createHorarioFromComponent(Component component) {
         Property description = component.getProperty(Property.DESCRIPTION);
         if (description == null) {
@@ -68,6 +80,11 @@ public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
         return horario;
     }
 
+    /**
+     *
+     * @param description
+     * @return
+     */
     private Map<String, String> parseDescriptionMap(String description) {
         String[] descriptionLines = description.split("\n");
         Map<String, String> descriptionMap = new HashMap<>();
@@ -80,6 +97,11 @@ public class WebcalHorarioReaderStrategy implements HorarioReaderStrategy {
         return descriptionMap;
     }
 
+    /**
+     *
+     * @param dateTimeStr
+     * @return
+     */
     private LocalDateTime parseDateTime(String dateTimeStr) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         return LocalDateTime.parse(dateTimeStr, dateFormatter);

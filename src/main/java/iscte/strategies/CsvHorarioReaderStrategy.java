@@ -10,7 +10,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
-
+    /**
+     *
+     * @param reader
+     * @return
+     * @throws IOException
+     */
     @Override
     public List<Horario> read(Reader reader) throws IOException {
         try (BufferedReader br = new BufferedReader(reader)) {
@@ -23,6 +28,11 @@ public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
         }
     }
 
+    /**
+     *
+     * @param tokens
+     * @return
+     */
     private Horario parseHorarioFromTokens(String[] tokens) {
         return Horario.builder()
                 .curso(removeQuotes(tokens[0]))
@@ -39,6 +49,11 @@ public class CsvHorarioReaderStrategy implements HorarioReaderStrategy {
                 .build();
     }
 
+    /**
+     *
+     * @param s
+     * @return
+     */
     private String removeQuotes(String s) {
         return s.replace("\"", "");
     }

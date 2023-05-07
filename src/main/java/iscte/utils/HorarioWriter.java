@@ -26,11 +26,25 @@ public class HorarioWriter {
             "diaDaSemana", "horaInicioAula", "horaFimAula", "dataAula", "salaAtribuidaAula", "lotacaoSala"
     };
 
+    /**
+     *
+     * @param horarios
+     * @return
+     * @throws JsonProcessingException
+     */
     public static String listToJson(List<Horario> horarios) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(horarios);
     }
 
+    /**
+     *
+     * @param horarios
+     * @return
+     * @throws IOException
+     * @throws CsvDataTypeMismatchException
+     * @throws CsvRequiredFieldEmptyException
+     */
     public static String listToCsv(List<Horario> horarios) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         out.println("Size of horarios: " + horarios.size());
 
