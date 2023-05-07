@@ -35,6 +35,10 @@ public class Horario {
     @CsvBindByPosition(position = 10)
     private String lotacaoSala;
 
+    /**
+     *
+     * @param startTime
+     */
     public void setStartTime(LocalDateTime startTime) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -43,7 +47,10 @@ public class Horario {
         setHoraInicio(startTime.format(timeFormatter));
     }
 
-
+    /**
+     *
+     * @param endTime
+     */
     public void setEndTime(LocalDateTime endTime) {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         setHoraFim(endTime.format(timeFormatter));

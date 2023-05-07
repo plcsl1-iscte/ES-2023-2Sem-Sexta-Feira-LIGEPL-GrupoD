@@ -2,249 +2,284 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendário</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Calendário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.6.2/sweetalert2.min.css" integrity="sha384-xsYLvXLOo2Qz6T3eH/nMz6pRKQAL3zY9X3u/RbSfA7FwIRjz4CnRo4iv4nfO+4PK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
-  ``<!-- Add these lines inside the <head> tag -->
-  <th:block th:fragment="disableOverlappingPrevPageScript">
-    <script th:inline="javascript">
-      /*<![CDATA[*/
-      window.disableOverlappingPrevPage = /*[[${disableOverlappingPrevPage}]]*/ false;
-      /*]]>*/
-    </script>
-  </th:block>
-
-  <th:block th:fragment="disableOverlappingNextPageScript">
-    <script th:inline="javascript">
-      /*<![CDATA[*/
-      window.disableOverlappingNextPage = /*[[${disableOverlappingNextPage}]]*/ false;
-      /*]]>*/
-    </script>
-  </th:block>
-
-  <th:block th:fragment="disableOverbookedPrevPageScript">
-    <script th:inline="javascript">
-      /*<![CDATA[*/
-      window.disableOverbookedPrevPage = /*[[${disableOverbookedPrevPage}]]*/ false;
-      /*]]>*/
-    </script>
-  </th:block>
-
-  <th:block th:fragment="disableOverbookedNextPageScript">
-    <script th:inline="javascript">
-      /*<![CDATA[*/
-      window.disableOverbookedNextPage = /*[[${disableOverbookedNextPage}]]*/ false;
-      /*]]>*/
-    </script>
-  </th:block>
 </head>
 
 <body>
-  <div class="modal fade" id="chooseUCsModal" tabindex="-1" role="dialog" aria-labelledby="chooseUCsModalLabel"
-    aria-hidden="true">
-    <form id="selectUCsForm" method="post" th:action="@{/selectUCs}" th:object="${model}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="chooseUCsModalLabel">Escolher Unidades Curriculares</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3 w-100">
-              <form id="selectUCsForm" method="post" th:action="@{/selectUCs}" th:object="${model}">
-                <div class="input-group mb-3 ucs-container">
-                  <select class="form-select" id="ucs" name="ucs" multiple>
-                    <option th:each="uc : ${ucs}" th:value="${uc}" th:text="${uc}"></option>
-                  </select>
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-primary">Selecionar UCs</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" action="submit" class="btn btn-primary" id="saveUCs">Salvar</button>
-          </div>
+<div class="container">
+    <div th:if="${overlappingTotalMessages > 0 or overbookedTotalMessages > 0}" class="popup">
+        <div class="popup-content">
+            <h3 class="popup-title">Atenção</h3>
+            <p th:if="${overlappingTotalMessages > 0}" class="popup-message">
+                Foram encontradas [[${overlappingTotalMessages}]] aulas sobrepostas no seu horario
+            </p>
+            <p th:if="${overbookedTotalMessages > 0}" class="popup-message">
+                Foram encontradas [[${overbookedTotalMessages}]] aulas sobrelotadas no seu horario
+            </p>
+            <button class="popup-close-button" onclick="closePopup()">Close</button>
         </div>
-      </div>
-    </form>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
-        <div class="d-flex flex-column align-items-center m-3 mt-3">
-          <div class="mb-3 w-100">
-            <form id="handleFileUpload" method="post" enctype="multipart/form-data" th:action="@{/handleFileUpload}"
-              th:object="${model}">
-              <div class="input-group mb-3">
-                <input type="text" id="path" name="path" class="form-control"
-                  placeholder="Digite o caminho do arquivo aqui...">
-                <div class="input-group-append">
-                  <button type="submit" class="btn btn-primary">Importar</button>
-                </div>
-              </div>
-            </form>
-            <form id="handleURLUpload" method="post" enctype="multipart/form-data" th:action="@{/handleURLUpload}"
-              th:object="${model}">
-              <div class="input-group mb-3">
-                <input type="text" id="url" name="CalendarURL" class="form-control" placeholder="Fénix URL...">
-                <div class="input-group-append">
-                  <button type="submit" class="btn btn-primary">WebCal</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="mb-3 w-100">
-            <form action="/download/csv" method="post" id="csvForm">
-              <button class="btn btn-primary btn-block w-100" id="exportCSV">
-                Exportar CSV
-              </button>
-            </form>
-          </div>
-          <div class="mb-3 w-100">
-            <form action="/download/json" method="post" id="jsonForm">
-              <button class="btn btn-primary btn-block w-100" id="exportJSON">
-                Exportar JSON
-              </button>
-            </form>
-          </div>
-          <div class="mb-3 w-100">
-            <button class="btn btn-primary btn-block w-100" id="chooseUCs">
-              Escolher Unidades Curriculares
-            </button>
-          </div>
-          <div class="card my-3 d-none" id="event-card">
-            <div class="card-body">
-              <h5 class="card-title" id="event-card-title"></h5>
-              <p class="card-text" id="event-card-description"></p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" id="close-event-card">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col py-3">
-        <div class="row">
-          <div class="col-8 mx-auto">
-            <div id="calendar"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Pagination template -->
-      <div th:replace="pagination :: pagination"></div>
     </div>
-  </div>
+</div>
 
-  <!-- add this code for the event card -->
-  <div class="card my-3 d-none" id="event-card">
+<script type="text/javascript">
+    function closePopup() {
+        var popup = document.querySelector('.popup');
+        popup.style.display = 'none';
+    }
+</script>
+
+<div class="modal fade" id="chooseUCsModal" tabindex="-1" role="dialog" aria-labelledby="chooseUCsModalLabel"
+     aria-hidden="true">
+    <form id="selectUCsForm" method="post" th:action="@{/selectUCs}" th:object="${model}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chooseUCsModalLabel">Escolher Unidades Curriculares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 w-100">
+                        <form id="selectUCsForm" method="post" th:action="@{/selectUCs}" th:object="${model}">
+                            <div class="input-group mb-3 ucs-container">
+                                <select class="form-select" id="ucs" name="ucs" multiple>
+                                    <option th:each="uc : ${ucs}" th:value="${uc}" th:text="${uc}"></option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary">Selecionar UCs</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" action="submit" class="btn btn-primary" id="saveUCs">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+            <div class="d-flex flex-column align-items-center m-3 mt-3">
+                <div class="mb-3 w-100">
+                    <form id="handleFileUpload" method="post" enctype="multipart/form-data"
+                          th:action="@{/handleFileUpload}"
+                          th:object="${model}">
+                        <div class="input-group mb-3">
+                            <input type="text" id="path" name="path" class="form-control"
+                                   placeholder="Digite o caminho do arquivo aqui...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Importar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="handleURLUpload" method="post" enctype="multipart/form-data"
+                          th:action="@{/handleURLUpload}"
+                          th:object="${model}">
+                        <div class="input-group mb-3">
+                            <input type="text" id="url" name="CalendarURL" class="form-control"
+                                   placeholder="Fénix URL...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">WebCal</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="mb-3 w-100">
+                    <form action="/download/csv" method="post" id="csvForm">
+                        <button class="btn btn-primary btn-block w-100" id="exportCSV">
+                            Exportar CSV
+                        </button>
+                    </form>
+                </div>
+                <div class="mb-3 w-100">
+                    <form action="/download/json" method="post" id="jsonForm">
+                        <button class="btn btn-primary btn-block w-100" id="exportJSON">
+                            Exportar JSON
+                        </button>
+                    </form>
+                </div>
+                <div class="mb-3 w-100">
+                    <button class="btn btn-primary btn-block w-100" id="chooseUCs">
+                        Escolher Unidades Curriculares
+                    </button>
+                </div>
+                <div class="card my-3 d-none" id="event-card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="event-card-title"></h5>
+                        <p class="card-text" id="event-card-description"></p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary" id="close-event-card">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col py-3">
+            <div class="row">
+                <div class="col-8 mx-auto">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- add this code for the event card -->
+<div class="card my-3 d-none" id="event-card">
     <div class="card-body">
-      <h5 class="card-title" id="event-card-title"></h5>
-      <p class="card-text" id="event-card-description"></p>
+        <h5 class="card-title" id="event-card-title"></h5>
+        <p class="card-text" id="event-card-description"></p>
     </div>
     <div class="card-footer">
-      <button type="button" class="btn btn-secondary" id="close-event-card">
-        Close
-      </button>
+        <button type="button" class="btn btn-secondary" id="close-event-card">
+            Close
+        </button>
     </div>
-  </div>
+</div>
 </body>
 <script th:inline="javascript">
 
-  document.getElementById("exportCSV").addEventListener("click", function () {
-    document.getElementById("csvForm").submit();
-  });
-
-  document.getElementById("exportJSON").addEventListener("click", function () {
-    document.getElementById("jsonForm").submit();
-  });
-
-  $(document).ready(function () {
-    var horarios = /*[[${horarios}]]*/[];
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-      },
-      defaultDate: new Date(),
-      navLinks: true,
-      editable: true,
-      eventLimit: true,
-      events: horarios ? horarios.map(function (horario) {
-        return {
-          title: horario.curso,
-          start: moment(horario.dataAula + 'T' + horario.horaInicio, 'DD/MM/YYYYTHH:mm:ss'),
-          end: moment(horario.dataAula + 'T' + horario.horaFim, 'DD/MM/YYYYTHH:mm:ss'),
-          editable: true,
-          allDay: false,
-          description: 'Curso: ' + horario.curso + '<br>' +
-            'Unidade Curricular: ' + horario.unidadeCurricular + '<br>' +
-            'Turno: ' + horario.turno + '<br>' +
-            'Turma: ' + horario.turma + '<br>' +
-            'Inscritos no turno: ' + horario.inscritos + '<br>' +
-            'Dia da semana: ' + horario.diaSemana + '<br>' +
-            'Hora início da aula: ' + horario.horaInicio + '<br>' +
-            'Hora fim da aula: ' + horario.horaFim + '<br>' +
-            'Data da aula: ' + horario.dataAula + '<br>' +
-            'Sala atribuída à aula: ' + horario.sala + '<br>' +
-            'Lotação da sala: ' + horario.lotacaoSala
-        };
-      }) : [], // If horarios is null or empty, use an empty array
-      eventClick: function (event) {
-        // set the title and description of the event card
-        $('#event-card-title').text(event.title);
-        $('#event-card-description').html(event.description);
-        // show the event card
-        $('#event-card').removeClass('d-none');
-      },
-    });
-    // add click event listener to the close button
-    $('#close-event-card').click(function () {
-      // hide the event card
-      $('#event-card').addClass('d-none');
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("chooseUCs").addEventListener("click", function () {
-      $('#chooseUCsModal').modal('show');
+    document.getElementById("exportCSV").addEventListener("click", function () {
+        document.getElementById("csvForm").submit();
     });
 
-    document.getElementById("saveUCs").addEventListener("click", function () {
-      // Add your logic to save the selected UCs and update the student's schedule here
-      $('#chooseUCsModal').modal('hide');
+    document.getElementById("exportJSON").addEventListener("click", function () {
+        document.getElementById("jsonForm").submit();
     });
-  });
+
+    $(document).ready(function () {
+        var horarios = /*[[${horarios}]]*/[];
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: new Date(),
+            navLinks: true,
+            editable: true,
+            eventLimit: true,
+            events: horarios ? horarios.map(function (horario) {
+                return {
+                    title: horario.curso,
+                    start: moment(horario.dataAula + 'T' + horario.horaInicio, 'DD/MM/YYYYTHH:mm:ss'),
+                    end: moment(horario.dataAula + 'T' + horario.horaFim, 'DD/MM/YYYYTHH:mm:ss'),
+                    editable: true,
+                    allDay: false,
+                    description: 'Curso: ' + horario.curso + '<br>' +
+                        'Unidade Curricular: ' + horario.unidadeCurricular + '<br>' +
+                        'Turno: ' + horario.turno + '<br>' +
+                        'Turma: ' + horario.turma + '<br>' +
+                        'Inscritos no turno: ' + horario.inscritos + '<br>' +
+                        'Dia da semana: ' + horario.diaSemana + '<br>' +
+                        'Hora início da aula: ' + horario.horaInicio + '<br>' +
+                        'Hora fim da aula: ' + horario.horaFim + '<br>' +
+                        'Data da aula: ' + horario.dataAula + '<br>' +
+                        'Sala atribuída à aula: ' + horario.sala + '<br>' +
+                        'Lotação da sala: ' + horario.lotacaoSala
+                };
+            }) : [], // If horarios is null or empty, use an empty array
+            eventClick: function (event) {
+                // set the title and description of the event card
+                $('#event-card-title').text(event.title);
+                $('#event-card-description').html(event.description);
+                // show the event card
+                $('#event-card').removeClass('d-none');
+            },
+        });
+        // add click event listener to the close button
+        $('#close-event-card').click(function () {
+            // hide the event card
+            $('#event-card').addClass('d-none');
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("chooseUCs").addEventListener("click", function () {
+            $('#chooseUCsModal').modal('show');
+        });
+
+        document.getElementById("saveUCs").addEventListener("click", function () {
+            // Add your logic to save the selected UCs and update the student's schedule here
+            $('#chooseUCsModal').modal('hide');
+        });
+    });
 
 
 </script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3E+7VcJ5U0e7V8u8z" crossorigin="anonymous"></script>
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3E+7VcJ5U0e7V8u8z"
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz4fnFO9gybBud7tM2J1R1e7S0Sf+j81J7FhyqKgG4SE4bX3gaSfAA4IcW" crossorigin="anonymous"></script>
+        integrity="sha384-oBqDVmMz4fnFO9gybBud7tM2J1R1e7S0Sf+j81J7FhyqKgG4SE4bX3gaSfAA4IcW"
+        crossorigin="anonymous"></script>
 
-
-
+<div class="container">
+    <div th:if="${overlappingLessonsMessages != null and (overlappingLessonsMessages.size() ?: 0) > 0}" class="my-4">
+        <h1>Aulas Sobrepostas</h1>
+        <div th:if="${overlappingLessonsMessages.size() > 0}">
+            <ul class="list-group">
+                <li th:each="message : ${overlappingLessonsMessages}" class="list-group-item">
+                    <span th:text="${message}"></span>
+                </li>
+            </ul>
+            <nav aria-label="Page navigation" class="mt-3">
+                <ul class="pagination">
+                    <li class="page-item" th:classappend="${disableOverlappingPrevPage} ? 'disabled' : ''">
+                        <a class="page-link" th:href="'/calendar?currentPath=' + ${currentPath} + '&overlappingPage=' + (${overlappingPageNumber != null ? overlappingPageNumber - 1 : 0}) + '&overbookedPage=' + (${overbookedPageNumber != null ? overbookedPageNumber : 0})">Previous</a>
+                    </li>
+                    <li class="page-item" th:classappend="${disableOverlappingNextPage} ? 'disabled' : ''">
+                        <a class="page-link" th:href="'/calendar?currentPath=' + ${currentPath} + '&overlappingPage=' + (${overlappingPageNumber != null ? overlappingPageNumber + 1 : 1}) + '&overbookedPage=' + (${overbookedPageNumber != null ? overbookedPageNumber : 0})">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div th:if="${overbookedLessonsMessages != null and (overbookedLessonsMessages.size() ?: 0) > 0}" class="my-4">
+        <h1>Aulas Sobrelotadas</h1>
+        <div th:if="${overbookedLessonsMessages.size() > 0}">
+            <ul class="list-group">
+                <li th:each="message : ${overbookedLessonsMessages}" class="list-group-item">
+                    <span th:text="${message}"></span>
+                </li>
+            </ul>
+            <nav aria-label="Page navigation" class="mt-3">
+                <ul class="pagination">
+                    <li class="page-item" th:classappend="${disableOverbookedPrevPage} ? 'disabled' : ''">
+                        <a class="page-link" th:href="'/calendar?currentPath=' + ${currentPath} + '&overlappingPage=' + (${overlappingPageNumber != null ? overlappingPageNumber : 0}) + '&overbookedPage=' + (${overbookedPageNumber != null ? overbookedPageNumber - 1 : 0})">Previous</a>
+                    </li>
+                    <li class="page-item" th:classappend="${disableOverbookedNextPage} ? 'disabled' : ''">
+                        <a class="page-link" th:href="'/calendar?currentPath=' + ${currentPath} + '&overlappingPage=' + (${overlappingPageNumber != null ? overlappingPageNumber : 0}) + '&overbookedPage=' + (${overbookedPageNumber != null ? overbookedPageNumber + 1 : 1})">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
 </html>
