@@ -6,23 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
+            "name": "Application",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "swapnest.Application",
+            "projectName": "iscte-timetable-management"
         },
         {
             "type": "java",
             "name": "Application",
             "request": "launch",
-            "mainClass": "iscte.Application",
-            "projectName": "iscte-timetable-management"
-        },
-        {
-            "type": "java",
-            "name": "ConversorHorario",
-            "request": "launch",
-            "mainClass": "iscte.timetable.management.ConversorHorario",
-            "projectName": "iscte-timetable-management"
+            "mainClass": "swapnest.Application",
+            "projectName": "swapnest"
         }
     ]
 }
